@@ -16,10 +16,10 @@ export function AnimatedSection({
 }: AnimatedSectionProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 32 }}
+      initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-80px" }}
-      transition={{ duration: 0.7, ease: "easeOut", delay }}
+      viewport={{ once: true, margin: "-60px" }}
+      transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1], delay }}
       className={className}
     >
       {children}
@@ -38,7 +38,7 @@ export function StaggerContainer({
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-80px" }}
+      viewport={{ once: true, margin: "-60px" }}
       variants={{
         visible: { transition: { staggerChildren: 0.15 } },
       }}
@@ -59,11 +59,11 @@ export function StaggerItem({
   return (
     <motion.div
       variants={{
-        hidden: { opacity: 0, y: 24 },
+        hidden: { opacity: 0, y: 30 },
         visible: {
           opacity: 1,
           y: 0,
-          transition: { duration: 0.6, ease: "easeOut" },
+          transition: { duration: 0.7, ease: [0.25, 0.1, 0.25, 1] },
         },
       }}
       className={className}

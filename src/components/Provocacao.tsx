@@ -4,16 +4,16 @@ import { AnimatedSection } from "./AnimatedSection";
 
 export function Provocacao() {
   return (
-    <section className="bg-white py-20 md:py-30" id="sobre">
-      <div className="mx-auto max-w-3xl px-6">
+    <section className="bg-white py-20 md:py-[140px]" id="sobre">
+      <div className="mx-auto max-w-[720px] px-6 text-center">
         <AnimatedSection>
-          <h2 className="font-serif text-[clamp(1.75rem,4vw,2.75rem)] leading-[1.15] text-navy mb-12">
+          <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold leading-[1.2] text-navy mb-14">
             Você construiu uma indústria sólida. O comercial é o único setor que
-            ainda não acompanhou.
+            ainda não <em className="italic font-bold">acompanhou</em>.
           </h2>
         </AnimatedSection>
 
-        <div className="space-y-6 text-navy/80 text-lg leading-relaxed">
+        <div className="space-y-7 text-navy/75 text-lg leading-[1.8] text-left max-w-[620px] mx-auto">
           <AnimatedSection>
             <p>
               Olha, eu sei que sua fábrica é boa. O produto tem qualidade, tem

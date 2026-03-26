@@ -4,16 +4,16 @@ import { AnimatedSection } from "./AnimatedSection";
 
 export function OQueMuda() {
   return (
-    <section className="bg-navy py-20 md:py-30">
-      <div className="mx-auto max-w-3xl px-6">
+    <section className="bg-navy py-20 md:py-[140px]">
+      <div className="mx-auto max-w-[720px] px-6 text-center">
         <AnimatedSection>
-          <h2 className="font-serif text-[clamp(1.75rem,4vw,2.75rem)] leading-[1.15] text-white mb-12">
+          <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold leading-[1.2] text-white mb-14">
             Imagina abrir o computador na segunda-feira e saber exatamente
-            quantas vendas vêm esse mês.
+            quantas vendas <em className="italic font-bold">vêm esse mês</em>.
           </h2>
         </AnimatedSection>
 
-        <div className="space-y-6 text-white/70 text-lg leading-relaxed">
+        <div className="space-y-7 text-white/60 text-lg leading-[1.8] text-left max-w-[620px] mx-auto">
           <AnimatedSection>
             <p>
               O pipeline tá ali, visual, atualizado. Você sabe quantas reuniões

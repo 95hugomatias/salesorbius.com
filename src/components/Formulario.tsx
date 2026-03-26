@@ -47,21 +47,22 @@ export function Formulario() {
   }
 
   return (
-    <section className="bg-white py-20 md:py-30" id="formulario">
-      <div className="mx-auto max-w-xl px-6">
+    <section className="bg-white py-20 md:py-[140px]" id="formulario">
+      <div className="mx-auto max-w-xl px-6 text-center">
         <AnimatedSection>
-          <h2 className="font-serif text-[clamp(1.75rem,4vw,2.75rem)] leading-[1.15] text-navy mb-12 text-center">
-            Me conta um pouco sobre sua indústria
+          <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold leading-[1.2] text-navy mb-14">
+            Me conta um pouco sobre sua{" "}
+            <em className="italic font-bold">indústria</em>
           </h2>
         </AnimatedSection>
 
         {status === "sent" ? (
           <AnimatedSection>
-            <div className="border border-navy/15 rounded-[4px] p-12 text-center">
-              <p className="text-navy text-xl font-medium mb-2">
+            <div className="border border-navy/15 rounded-2xl p-14 text-center">
+              <p className="text-navy text-xl font-semibold mb-3">
                 Mensagem enviada!
               </p>
-              <p className="text-navy/60">
+              <p className="text-navy/50 font-medium">
                 Respondo em até 24h pelo WhatsApp.
               </p>
             </div>
@@ -75,7 +76,7 @@ export function Formulario() {
                   name="nome"
                   required
                   placeholder="Seu nome"
-                  className="w-full border border-navy/20 bg-white text-navy placeholder:text-navy/40 px-4 py-3.5 rounded-[4px] text-base transition-colors focus:border-navy"
+                  className="w-full border border-navy/15 bg-white text-navy placeholder:text-navy/35 px-6 py-4 rounded-full text-base font-medium transition-all duration-300 focus:border-navy focus:shadow-sm"
                 />
               </div>
 
@@ -85,7 +86,7 @@ export function Formulario() {
                   name="empresa"
                   required
                   placeholder="Nome da empresa"
-                  className="w-full border border-navy/20 bg-white text-navy placeholder:text-navy/40 px-4 py-3.5 rounded-[4px] text-base transition-colors focus:border-navy"
+                  className="w-full border border-navy/15 bg-white text-navy placeholder:text-navy/35 px-6 py-4 rounded-full text-base font-medium transition-all duration-300 focus:border-navy focus:shadow-sm"
                 />
               </div>
 
@@ -95,7 +96,7 @@ export function Formulario() {
                   name="whatsapp"
                   required
                   placeholder="WhatsApp"
-                  className="w-full border border-navy/20 bg-white text-navy placeholder:text-navy/40 px-4 py-3.5 rounded-[4px] text-base transition-colors focus:border-navy"
+                  className="w-full border border-navy/15 bg-white text-navy placeholder:text-navy/35 px-6 py-4 rounded-full text-base font-medium transition-all duration-300 focus:border-navy focus:shadow-sm"
                 />
               </div>
 
@@ -104,11 +105,11 @@ export function Formulario() {
                   name="desafio"
                   required
                   defaultValue=""
-                  className="w-full border border-navy/20 bg-white text-navy px-4 py-3.5 rounded-[4px] text-base transition-colors focus:border-navy appearance-none"
+                  className="w-full border border-navy/15 bg-white text-navy px-6 py-4 rounded-full text-base font-medium transition-all duration-300 focus:border-navy focus:shadow-sm appearance-none"
                   style={{
                     backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%230f1a2b' d='M2 4l4 4 4-4'/%3E%3C/svg%3E")`,
                     backgroundRepeat: "no-repeat",
-                    backgroundPosition: "right 16px center",
+                    backgroundPosition: "right 24px center",
                   }}
                 >
                   <option value="" disabled>
@@ -122,22 +123,24 @@ export function Formulario() {
                 </select>
               </div>
 
-              <button
-                type="submit"
-                disabled={status === "sending"}
-                className="w-full bg-navy text-white text-sm font-semibold px-8 py-4 rounded-[4px] hover:bg-white hover:text-navy border-2 border-navy transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {status === "sending" ? "Enviando..." : "Quero o Diagnóstico"}
-              </button>
+              <div className="pt-2">
+                <button
+                  type="submit"
+                  disabled={status === "sending"}
+                  className="w-full bg-navy text-white text-sm font-semibold px-8 py-4 rounded-full hover:bg-white hover:text-navy border-2 border-navy transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {status === "sending" ? "Enviando..." : "Quero o Diagnóstico"}
+                </button>
+              </div>
 
               {status === "error" && (
-                <p className="text-red-600 text-sm text-center">
+                <p className="text-red-600 text-sm text-center font-medium">
                   Erro ao enviar. Tente novamente ou envie email para
                   contato@salesorbius.com
                 </p>
               )}
 
-              <p className="text-navy/40 text-sm text-center">
+              <p className="text-navy/35 text-sm text-center font-medium pt-1">
                 Respondo em até 24h pelo WhatsApp.
               </p>
             </form>

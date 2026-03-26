@@ -20,32 +20,32 @@ export function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-navy/95 backdrop-blur-sm" : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled ? "bg-navy/95 backdrop-blur-md shadow-lg" : "bg-transparent"
       }`}
     >
-      <div className="mx-auto max-w-6xl px-6 flex items-center justify-between h-16 md:h-20">
+      <div className="mx-auto max-w-6xl px-6 flex items-center justify-between h-20 md:h-24">
         <a
           href="#"
-          className="text-white text-sm font-semibold tracking-[0.3em] uppercase"
+          className="text-white text-sm font-bold tracking-[0.35em] uppercase"
         >
           ORBIUS
         </a>
 
         {/* Desktop */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-10">
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-white/70 text-sm font-medium hover:text-white transition-colors"
+              className="text-white/70 text-sm font-medium hover:text-white transition-colors duration-300"
             >
               {link.label}
             </a>
           ))}
           <a
             href="#formulario"
-            className="text-white text-sm font-medium border border-white/30 px-5 py-2.5 rounded-[4px] hover:bg-white hover:text-navy transition-all"
+            className="text-white text-sm font-semibold border border-white/40 px-7 py-3 rounded-full hover:bg-white hover:text-navy transition-all duration-300"
           >
             Agendar Diagnóstico Gratuito
           </a>
@@ -76,7 +76,7 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-navy/95 backdrop-blur-sm border-t border-white/10 px-6 pb-6 pt-4 flex flex-col gap-4">
+        <div className="md:hidden bg-navy/95 backdrop-blur-md border-t border-white/10 px-6 pb-8 pt-6 flex flex-col gap-5">
           {links.map((link) => (
             <a
               key={link.href}
@@ -90,7 +90,7 @@ export function Navbar() {
           <a
             href="#formulario"
             onClick={() => setMenuOpen(false)}
-            className="text-white text-sm font-medium border border-white/30 px-5 py-2.5 rounded-[4px] text-center hover:bg-white hover:text-navy transition-all"
+            className="text-white text-sm font-semibold border border-white/40 px-7 py-3 rounded-full text-center hover:bg-white hover:text-navy transition-all duration-300"
           >
             Agendar Diagnóstico Gratuito
           </a>

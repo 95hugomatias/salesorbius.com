@@ -2,54 +2,119 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { getPostBySlug, getRelatedPosts, getAllSlugs } from "@/data/blog-posts";
+import { BlogContent } from "@/components/BlogContent";
+import type { Metadata } from "next";
 
-// Placeholder: replace with real data source (CMS, MDX files, database)
-const posts: Record<string, { title: string; date: string; category: string; content: string }> = {
-  // Example:
-  // "como-montar-processo-comercial-industria": {
-  //   title: "Como montar um processo comercial na sua indústria B2B",
-  //   date: "2026-04-01",
-  //   category: "Processo Comercial",
-  //   content: "Conteúdo do artigo aqui...",
-  // },
-};
+type Props = { params: Promise<{ slug: string }> };
 
-export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
+export async function generateStaticParams() {
+  return getAllSlugs().map((slug) => ({ slug }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const post = posts[slug];
+  const post = getPostBySlug(slug);
+  if (!post) return {};
 
-  if (!post) notFound();
+  return {
+    title: post.titleTag,
+    description: post.metaDescription,
+    openGraph: {
+      title: post.titleTag,
+      description: post.metaDescription,
+      url: `https://salesorbius.com/blog/${post.slug}`,
+      siteName: "Orbius",
+      locale: "pt_BR",
+      type: "article",
+      publishedTime: post.date || undefined,
+    },
+    alternates: {
+      canonical: `https://salesorbius.com/blog/${post.slug}`,
+    },
+  };
+}
+
+export default async function BlogPost({ params }: Props) {
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
+
+  if (!post || !post.published) notFound();
+
+  const relatedPosts = getRelatedPosts(post);
+
+  // JSON-LD Article schema
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.h1,
+    description: post.metaDescription,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: {
+      "@type": "Organization",
+      name: "Orbius",
+      url: "https://salesorbius.com",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Orbius",
+      url: "https://salesorbius.com",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://salesorbius.com/blog/${post.slug}`,
+    },
+  };
 
   return (
     <>
       <Navbar />
       <main className="pt-32 pb-20 md:pb-[140px]">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+
         <article className="mx-auto max-w-2xl px-6">
           <Link
             href="/blog"
             className="text-navy/40 text-sm font-medium hover:text-navy transition-colors"
           >
-            ← Voltar ao blog
+            &larr; Voltar ao blog
           </Link>
 
-          <span className="block text-xs font-semibold text-navy/40 uppercase tracking-wider mt-8">
-            {post.category}
-          </span>
-          <h1 className="text-[clamp(1.75rem,4vw,2.5rem)] font-bold text-navy mt-2 mb-4 leading-tight">
-            {post.title}
-          </h1>
-          <p className="text-navy/30 text-sm font-medium mb-12">
-            {new Date(post.date).toLocaleDateString("pt-BR", {
-              day: "numeric",
-              month: "long",
-              year: "numeric",
-            })}
-          </p>
-
-          <div className="prose prose-navy max-w-none text-navy/70 text-lg leading-relaxed font-medium">
-            {post.content}
+          <div className="flex items-center gap-3 mt-8">
+            <span className="text-xs font-semibold text-navy/40 uppercase tracking-wider">
+              {post.category}
+            </span>
+            {post.isPillar && (
+              <span className="text-[10px] font-bold text-white bg-navy/80 px-2 py-0.5 rounded-full uppercase tracking-wider">
+                Guia Completo
+              </span>
+            )}
           </div>
 
+          <h1 className="text-[clamp(1.75rem,4vw,2.5rem)] font-bold text-navy mt-3 mb-4 leading-tight">
+            {post.h1}
+          </h1>
+
+          {post.date && (
+            <p className="text-navy/30 text-sm font-medium mb-12">
+              {new Date(post.date).toLocaleDateString("pt-BR", {
+                day: "numeric",
+                month: "long",
+                year: "numeric",
+              })}
+            </p>
+          )}
+
+          {/* Article content rendered from markdown */}
+          <div className="prose prose-lg prose-navy max-w-none">
+            <BlogContent content={post.content} />
+          </div>
+
+          {/* CTA */}
           <div className="mt-16 pt-8 border-t border-navy/10 text-center">
             <p className="text-navy font-bold text-lg mb-4">
               Quer estruturar o comercial da sua indústria?
@@ -61,6 +126,31 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
               Quero o Diagnóstico Gratuito
             </Link>
           </div>
+
+          {/* Related articles (internal linking) */}
+          {relatedPosts.length > 0 && (
+            <div className="mt-16 pt-8 border-t border-navy/10">
+              <h2 className="text-navy font-bold text-lg mb-6">
+                Artigos relacionados
+              </h2>
+              <div className="space-y-4">
+                {relatedPosts.slice(0, 4).map((related) => (
+                  <Link
+                    key={related.slug}
+                    href={`/blog/${related.slug}`}
+                    className="block border border-navy/10 rounded-xl p-5 hover:border-navy/30 transition-all duration-300 group"
+                  >
+                    <span className="text-[10px] font-semibold text-navy/35 uppercase tracking-wider">
+                      {related.category}
+                    </span>
+                    <p className="text-navy font-semibold text-sm mt-1 group-hover:text-navy/70 transition-colors">
+                      {related.h1}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
         </article>
       </main>
       <Footer />

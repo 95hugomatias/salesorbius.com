@@ -51,6 +51,9 @@ export async function POST(request: Request) {
     }
 
     // Send to Make webhook
+    const now = new Date().toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo" });
+    const [data, hora] = now.split(", ");
+
     const webhookRes = await fetch("https://hook.us1.make.com/4lhdoebay1rnifpiifzh9524oosdxrx2", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -59,6 +62,8 @@ export async function POST(request: Request) {
         site: site || "",
         setor, faturamento, funcionarios,
         desafio, como_conheceu: comoConheceu,
+        data_conversao: data,
+        hora_conversao: hora,
       }),
     });
 

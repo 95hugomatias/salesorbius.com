@@ -328,9 +328,208 @@ Se você quer se aprofundar em cada etapa deste processo, continue lendo:
     cluster: "funil",
     isPillar: true,
     internalLinks: ["etapas-funil-vendas-b2b", "qualificar-leads-industriais", "encurtar-ciclo-vendas-industrial", "follow-up-b2b", "taxa-conversao-propostas-industriais", "venda-consultiva-industrias", "objecoes-vendas-industriais", "prospeccao-b2b-industrias", "marketing-digital-industrias"],
-    date: "",
-    published: false,
-    content: "",
+    date: "2026-03-26",
+    published: true,
+    content: `Se você perguntar para o dono de uma indústria "como está o funil de vendas?", na maioria dos casos a resposta é um olhar confuso. Não porque ele não se importa com vendas — ele se importa demais. Mas porque nunca ninguém estruturou isso.
+
+O funil de vendas industrial é o caminho que um potencial cliente percorre desde o primeiro contato até o fechamento do contrato. Sem ele, você não sabe quantas oportunidades tem, onde elas estão travando e quanto vai faturar no próximo trimestre.
+
+Este guia mostra como montar um funil de vendas B2B adaptado à realidade da indústria brasileira.
+
+## O que é um funil de vendas industrial?
+
+O funil de vendas é uma representação visual das etapas que um lead percorre até virar cliente. No contexto industrial, essas etapas são mais longas e complexas do que no varejo porque:
+
+- **O ticket médio é alto** — decisões envolvem investimento significativo
+- **Múltiplos decisores** — compras, engenharia, diretoria, financeiro
+- **Ciclo longo** — de semanas a meses, dependendo do produto
+- **Especificação técnica** — o lead precisa entender que seu produto resolve o problema dele
+
+Por isso, o funil industrial precisa ser desenhado para acompanhar essa complexidade sem perder oportunidades pelo caminho.
+
+## As 6 etapas do funil de vendas industrial
+
+### Etapa 1: Prospecção (Topo do Funil)
+
+É aqui que tudo começa. Você identifica empresas com perfil para comprar e faz o primeiro contato. Pode ser via email frio, LinkedIn, telefone ou feiras.
+
+**Critério de entrada:** Empresa dentro do ICP (Perfil de Cliente Ideal)
+**Critério de saída:** Lead respondeu e demonstrou algum interesse
+
+Métricas desta etapa:
+- Quantidade de empresas prospectadas por semana
+- Taxa de resposta (meta: acima de 5%)
+- Tempo médio até primeira resposta
+
+### Etapa 2: Qualificação
+
+O lead respondeu — agora você precisa entender se ele realmente tem potencial. Qualificar significa responder quatro perguntas:
+
+1. **Tem a dor?** — Ele tem o problema que você resolve?
+2. **Tem orçamento?** — Consegue investir no que você vende?
+3. **Tem urgência?** — Precisa resolver agora ou "para o ano que vem"?
+4. **Tem autoridade?** — A pessoa que você está falando decide ou precisa aprovar com alguém?
+
+Use uma framework simples. O BANT funciona bem na indústria:
+
+| Critério | Pergunta-chave |
+|----------|----------------|
+| **Budget** (Orçamento) | "Vocês já têm verba alocada para esse projeto?" |
+| **Authority** (Autoridade) | "Quem mais participa dessa decisão?" |
+| **Need** (Necessidade) | "O que acontece se vocês não resolverem isso nos próximos meses?" |
+| **Timeline** (Prazo) | "Quando vocês precisam ter isso rodando?" |
+
+**Critério de saída:** Lead qualificado (tem dor, orçamento e prazo)
+
+### Etapa 3: Apresentação / Reunião técnica
+
+Com o lead qualificado, você agenda uma reunião mais profunda. Na indústria, essa reunião geralmente envolve:
+
+- Entendimento técnico detalhado da necessidade
+- Demonstração do produto ou serviço
+- Visita técnica (presencial ou virtual)
+- Envolvimento de engenharia ou equipe técnica
+
+O erro mais comum aqui é pular direto para a proposta sem entender o cenário completo. Na venda industrial, quem entende melhor o problema fecha mais.
+
+**Dicas para esta etapa:**
+- Leve perguntas preparadas, não só uma apresentação
+- Envolva o técnico da sua equipe se necessário
+- Anote tudo — cada detalhe pode ser diferencial na proposta
+- Identifique quem são todos os decisores
+
+**Critério de saída:** Necessidade mapeada, decisores identificados, próximo passo acordado
+
+### Etapa 4: Proposta
+
+A proposta comercial na indústria não é um PDF genérico. Ela precisa ser personalizada para o cenário do lead.
+
+Uma boa proposta industrial contém:
+
+1. **Resumo do cenário** — Mostre que você entendeu o problema
+2. **Solução proposta** — O que você vai entregar, com especificações técnicas
+3. **Resultados esperados** — O que o cliente ganha (economia, produtividade, qualidade)
+4. **Investimento** — Valor claro, com condições de pagamento
+5. **Prazo de entrega** — Quando começa e quando entrega
+6. **Próximo passo** — O que precisa acontecer para fechar
+
+**Critério de saída:** Proposta enviada e recebida pelo decisor
+
+### Etapa 5: Negociação
+
+Na indústria, é raro fechar na primeira proposta. A negociação pode envolver:
+
+- Ajustes técnicos na especificação
+- Negociação de preço e condições
+- Aprovação por comitê ou diretoria
+- Concorrência com outros fornecedores
+- Visita à fábrica para validação
+
+O segredo aqui é **manter o ritmo**. A maioria das vendas industriais se perde não por preço, mas por falta de follow-up. O decisor ficou ocupado com a operação, esqueceu de aprovar, e quando você volta a ligar, já fechou com outro.
+
+**Dicas para não perder na negociação:**
+- Defina prazos claros para cada etapa da aprovação
+- Faça follow-up a cada 3-5 dias úteis
+- Entenda as objeções reais (preço? prazo? confiança? política interna?)
+- Ofereça referências de clientes similares
+
+**Critério de saída:** Acordo verbal ou pedido de compra
+
+### Etapa 6: Fechamento
+
+O contrato está assinado, o pedido entrou. Mas o funil não acaba aqui. O fechamento inclui:
+
+- Formalização do contrato
+- Alinhamento de entrega com a operação
+- Kick-off com o time técnico
+- Definição de ponto de contato pós-venda
+
+Um bom fechamento é a semente da próxima venda. Cliente bem atendido indica, recompra e amplia escopo.
+
+## Como dimensionar seu funil
+
+Para bater a meta de faturamento, você precisa calcular de trás para frente:
+
+**Exemplo prático:**
+
+| Dado | Valor |
+|------|-------|
+| Meta mensal de faturamento | R$ 500.000 |
+| Ticket médio | R$ 50.000 |
+| Vendas necessárias | 10 por mês |
+| Taxa de conversão (proposta → venda) | 25% |
+| Propostas necessárias | 40 por mês |
+| Taxa de conversão (reunião → proposta) | 50% |
+| Reuniões necessárias | 80 por mês |
+| Taxa de conversão (prospecção → reunião) | 10% |
+| **Empresas a prospectar** | **800 por mês** |
+
+Esses números assustam? É por isso que processo importa. Sem funil, você não sabe que precisa prospectar 800 empresas para fechar 10 vendas. E sem saber disso, fica esperando o telefone tocar.
+
+## Ferramentas para gerenciar o funil
+
+Você não precisa de software caro para começar. O importante é ter visibilidade:
+
+| Estágio | Ferramenta mínima | Ferramenta ideal |
+|---------|-------------------|-----------------|
+| Controle do funil | Planilha bem feita | CRM (HubSpot, Pipedrive) |
+| Prospecção | LinkedIn + email manual | Sales Navigator + Lemlist |
+| Follow-up | Agenda + lembretes | CRM com automação |
+| Propostas | Word/PDF | Ferramenta de propostas (Proposify) |
+| Métricas | Planilha | Dashboard do CRM |
+
+A recomendação: comece com CRM gratuito (HubSpot) desde o dia 1. Planilha funciona até 20-30 leads. Depois disso, você vai perder controle.
+
+## Os 5 erros mais comuns no funil industrial
+
+### 1. Não ter etapas definidas
+Sem etapas claras, todo lead é "em andamento". Você não sabe se tem 50 oportunidades reais ou 50 contatos frios. O funil vira uma lista de desejos.
+
+### 2. Não qualificar leads
+Gastar tempo com lead que não tem orçamento, não tem urgência ou não decide é o maior desperdício do comercial industrial. Qualifique cedo, descarte rápido.
+
+### 3. Proposta sem reunião técnica
+Enviar proposta para quem você não entendeu o cenário é jogar no escuro. A taxa de conversão despenca.
+
+### 4. Follow-up fraco
+Na indústria, o ciclo é longo. Se você não faz follow-up estruturado, o lead esfria. A maioria das vendas se perde entre a proposta e o fechamento — não por preço, mas por falta de acompanhamento.
+
+### 5. Não medir nada
+Sem métricas, você não sabe onde o funil está travando. Pode ser que prospecta bem mas qualifica mal. Ou qualifica bem mas perde na proposta. Sem dados, é achismo.
+
+## Métricas essenciais do funil
+
+| Métrica | O que mostra | Meta saudável |
+|---------|-------------|---------------|
+| Taxa de conversão por etapa | Onde o funil trava | Varia por setor |
+| Ciclo médio de venda | Quanto tempo leva para fechar | Indústria: 30-90 dias |
+| Ticket médio | Valor médio por venda | Depende do seu negócio |
+| Velocidade do funil | Quantas oportunidades avançam por semana | Crescente |
+| Taxa de win/loss | % de propostas que viram venda | Acima de 20% |
+| Motivos de perda | Por que leads não fecham | Acompanhar padrões |
+
+Acompanhe essas métricas semanalmente. Se alguma taxa caiu, investigue. O funil conta a história do seu comercial — você só precisa ler.
+
+## Como a Orbius ajuda
+
+Na Orbius, montamos o funil de vendas completo para indústrias B2B: definição de etapas, critérios de passagem, implementação no CRM, scripts de qualificação e dashboard de acompanhamento.
+
+O resultado é visibilidade total do pipeline e previsibilidade de receita.
+
+## Próximos passos
+
+Para se aprofundar em cada etapa do funil:
+
+- Etapas do funil de vendas B2B para indústrias
+- Como qualificar leads industriais (MQL vs SQL)
+- Como encurtar o ciclo de vendas no setor industrial
+- Follow-up B2B: como fazer sem ser inconveniente
+- Como aumentar a taxa de conversão de propostas industriais
+- Venda consultiva para indústrias: o que é e como aplicar
+
+---
+
+*Quer montar o funil de vendas da sua indústria? Agende um diagnóstico gratuito e descubra onde estão os gargalos do seu comercial.*`,
   },
   {
     slug: "etapas-funil-vendas-b2b",

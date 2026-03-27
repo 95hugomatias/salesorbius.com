@@ -91,6 +91,18 @@ export async function POST(request: Request) {
       console.log("Dica: Configure WEB3FORMS_ACCESS_KEY nas variáveis de ambiente.");
     }
 
+    // Send to Make webhook
+    await fetch("https://hook.us1.make.com/4lhdoebay1rnifpiifzh9524oosdxrx2", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        nome, telefone, email, empresa,
+        site: site || "",
+        setor, faturamento, funcionarios,
+        desafio, como_conheceu: comoConheceu,
+      }),
+    }).catch(() => {}); // non-blocking
+
     return NextResponse.json({ success: true });
   } catch {
     return NextResponse.json(

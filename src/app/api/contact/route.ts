@@ -50,49 +50,8 @@ export async function POST(request: Request) {
       );
     }
 
-    const WEB3FORMS_KEY = process.env.WEB3FORMS_ACCESS_KEY;
-
-    if (WEB3FORMS_KEY) {
-      const res = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          access_key: WEB3FORMS_KEY,
-          subject: `Novo lead: ${empresa} — ${setor}`,
-          from_name: nome,
-          nome,
-          telefone,
-          email,
-          empresa,
-          site: site || "(não informado)",
-          setor,
-          faturamento,
-          funcionarios,
-          desafio,
-          como_conheceu: comoConheceu,
-          lgpd_aceito: "Sim",
-          to: "contato@salesorbius.com",
-        }),
-      });
-
-      if (!res.ok) {
-        return NextResponse.json(
-          { error: "Erro ao enviar formulário." },
-          { status: 500 }
-        );
-      }
-    } else {
-      console.log("=== Novo Lead ===");
-      console.log({
-        nome, telefone, email, empresa, site,
-        setor, faturamento, funcionarios, desafio, comoConheceu,
-      });
-      console.log("=================");
-      console.log("Dica: Configure WEB3FORMS_ACCESS_KEY nas variáveis de ambiente.");
-    }
-
     // Send to Make webhook
-    await fetch("https://hook.us1.make.com/4lhdoebay1rnifpiifzh9524oosdxrx2", {
+    const webhookRes = await fetch("https://hook.us1.make.com/4lhdoebay1rnifpiifzh9524oosdxrx2", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -101,7 +60,15 @@ export async function POST(request: Request) {
         setor, faturamento, funcionarios,
         desafio, como_conheceu: comoConheceu,
       }),
-    }).catch(() => {}); // non-blocking
+    });
+
+    if (!webhookRes.ok) {
+      console.error("Make webhook error:", webhookRes.status, await webhookRes.text());
+      return NextResponse.json(
+        { error: "Erro ao enviar formulário." },
+        { status: 500 }
+      );
+    }
 
     return NextResponse.json({ success: true });
   } catch {

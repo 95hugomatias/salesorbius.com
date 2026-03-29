@@ -635,9 +635,103 @@ Para se aprofundar em cada etapa do funil:
     cluster: "marketing",
     isPillar: true,
     internalLinks: ["gerar-leads-industrias", "seo-industrias", "marketing-conteudo-industrias", "google-ads-industrias-b2b", "landing-pages-b2b", "inbound-vs-outbound-industrial", "digitalizar-comercial-industria", "prospeccao-b2b-industrias", "funil-vendas-industrial"],
-    date: "",
-    published: false,
-    content: "",
+    date: "2026-03-26",
+    published: true,
+    content: `"A gente já tentou marketing digital. Não funcionou."
+
+Essa frase aparece em praticamente toda conversa que temos com donos de indústria. E quando a gente cava um pouco mais, a história é sempre parecida: contrataram uma agência, rodaram anúncios no Instagram, postaram umas fotos de produto, e depois de seis meses cancelaram porque "não veio nada".
+
+O problema não é que marketing digital não funciona para indústria. O problema é que aplicaram o marketing digital errado.
+
+O marketing que funciona para e-commerce, restaurante, loja de roupa — não funciona para uma indústria que vende equipamento de R$ 200 mil com ciclo de decisão de 4 meses. São mundos diferentes. E tratar igual é jogar dinheiro fora.
+
+Vamos separar o que funciona do que não funciona.
+
+## O que NÃO funciona para indústrias
+
+**Instagram com foto de produto e legenda genérica.** Seu comprador não está scrollando o feed procurando um novo fornecedor de válvulas industriais. Ele está assistindo vídeo de cachorro. Marketing B2B industrial não compete por atenção no feed — compete por confiança quando o comprador já está procurando solução.
+
+**Tráfego pago sem destino certo.** Rodar Google Ads que manda para a home do site é como botar um outdoor na estrada apontando para lugar nenhum. O clique custou R$ 15 e o visitante saiu em 8 segundos porque não encontrou o que procurava. Sem uma [landing page feita para converter](/blog/landing-pages-b2b), o investimento em anúncio vira desperdício.
+
+**Blog com conteúdo que ninguém pesquisa.** "5 curiosidades sobre usinagem" não gera lead. O que gera lead é responder a dúvida que o comprador digita no Google antes de ligar para um fornecedor. Isso exige [estratégia de conteúdo pensada para o funil](/blog/marketing-conteudo-industrias), não posts aleatórios.
+
+**Redes sociais como canal principal.** Para B2B industrial, rede social é vitrine, não é loja. Ela reforça autoridade, mas raramente é o canal onde a venda começa. Quem depende só de rede social está construindo em terreno alugado.
+
+## O que FUNCIONA para indústrias
+
+Agora, o outro lado. O que realmente move o ponteiro.
+
+### Google como canal de aquisição
+
+Quando um engenheiro de manutenção pesquisa "fornecedor de selo mecânico para bomba centrífuga", ele já tem intenção de compra. Esse é o tráfego mais valioso que existe para indústria — gente que já sabe o que precisa e está comparando opções.
+
+Duas formas de capturar:
+
+**SEO (orgânico):** Criar páginas que respondem exatamente o que seu comprador pesquisa. Não precisa ser conteúdo genérico. Precisa ser técnico, específico e útil. Um artigo sobre [como escolher o CRM certo para sua operação industrial](/blog/crm-ferramentas-industrias) pode atrair gestores comerciais que estão reorganizando o processo de vendas — e esses gestores podem virar clientes.
+
+**Google Ads (pago):** Anúncios que aparecem quando alguém pesquisa termos comerciais do seu setor. Funciona muito bem quando tem [landing page dedicada](/blog/landing-pages-b2b), formulário curto e oferta clara (diagnóstico gratuito, orçamento em 24h, catálogo técnico). Para fazer direito, leia o guia de [Google Ads para indústrias B2B](/blog/google-ads-industrias-b2b).
+
+### LinkedIn como canal de relacionamento e prospecção
+
+LinkedIn é onde seu comprador B2B existe profissionalmente. Diferente do Instagram, aqui ele está em modo trabalho. Duas formas de usar:
+
+**Conteúdo de autoridade:** Posts que mostram bastidor da operação, resultados de clientes, opinião sobre o mercado. Não precisa viralizar — precisa que os 500 decisores certos vejam você como referência.
+
+**Prospecção ativa:** Sales Navigator + mensagens personalizadas. Isso conecta com o trabalho de [prospecção B2B](/blog/prospeccao-b2b-industrias) — LinkedIn não é canal isolado, é parte da cadência de outbound.
+
+### Email como canal de nutrição e conversão
+
+O lead pesquisou no Google, baixou seu catálogo técnico, mas não pediu orçamento. O que você faz?
+
+Se a resposta for "nada", você acabou de perder um lead quente.
+
+Email marketing B2B não é newsletter semanal com novidades da empresa. É uma sequência inteligente que educa o lead, mostra cases relevantes e conduz até a conversa comercial. Cada email aproxima o lead da próxima etapa do [funil de vendas](/blog/funil-vendas-industrial).
+
+### Conteúdo técnico como ativo de longo prazo
+
+Um artigo bem feito sobre um problema técnico do seu setor trabalha para você 24 horas por dia, 365 dias por ano. Enquanto o anúncio para de gerar resultado no segundo que você corta o orçamento, o artigo continua ranqueando no Google.
+
+A diferença é que conteúdo industrial precisa ser útil de verdade. O comprador técnico percebe em 10 segundos se o texto foi escrito por quem entende do assunto ou por um estagiário que pesquisou no Google. Detalhamos como fazer isso funcionar no guia de [conteúdo para indústrias](/blog/marketing-conteudo-industrias).
+
+## Inbound, outbound ou os dois?
+
+Essa é a dúvida de todo diretor comercial de indústria. A resposta curta: os dois. Mas em momentos diferentes.
+
+**Se você precisa de resultado em 30-60 dias:** Outbound. [Prospecção ativa](/blog/prospeccao-b2b-industrias), email frio, LinkedIn, telefone. Vai atrás do cliente. É mais trabalhoso, mas gera pipeline rápido.
+
+**Se você quer construir um canal previsível a médio/longo prazo:** Inbound. SEO, conteúdo, Google Ads. Demora 3-6 meses para ganhar tração, mas depois o custo por lead cai consistentemente.
+
+**O cenário ideal:** Outbound sustenta o curto prazo enquanto o inbound amadurece. Depois de 6-12 meses, os dois canais se alimentam — o conteúdo que você criou para SEO serve como material de apoio na cadência de outbound, e os leads de inbound entram direto no [funil](/blog/funil-vendas-industrial) que já está rodando.
+
+Aprofundamos essa análise no artigo sobre [inbound vs outbound para o setor industrial](/blog/inbound-vs-outbound-industrial).
+
+## O erro fatal: marketing sem processo comercial
+
+Aqui está o ponto que nenhuma agência de marketing vai te contar.
+
+Não adianta gerar 100 leads por mês se o comercial não sabe o que fazer com eles. O lead entra, ninguém liga em 24h, não tem cadência de follow-up, não tem CRM organizado. O lead esfria. O marketing olha os números e diz "entregamos 100 leads". O comercial diz "os leads são ruins". E ninguém fecha.
+
+O problema está no meio — na falta de processo entre marketing e vendas.
+
+Marketing digital para indústria só funciona quando existe um [funil de vendas estruturado](/blog/funil-vendas-industrial) para receber esses leads. Qualificação clara, critérios de passagem entre etapas, cadência de follow-up, tudo registrado no CRM. Sem isso, o investimento em marketing é como encher um balde furado.
+
+## Por onde começar
+
+Se sua indústria nunca fez marketing digital de verdade, não tente fazer tudo ao mesmo tempo. A ordem importa:
+
+**Primeiro**, tenha um site que funciona. Não precisa ser bonito — precisa ser claro. O visitante chega e em 5 segundos entende o que você faz, para quem e qual o próximo passo.
+
+**Segundo**, ative Google Ads para os termos mais comerciais do seu setor. Com [landing page dedicada](/blog/landing-pages-b2b) e formulário, você começa a gerar leads em uma semana.
+
+**Terceiro**, comece o [SEO](/blog/seo-industrias). Crie os primeiros artigos respondendo as perguntas mais comuns do seu comprador. Isso leva meses para dar resultado, mas é o investimento mais rentável a longo prazo.
+
+**Quarto**, estruture o LinkedIn do diretor comercial ou do dono. Não é a página da empresa — é o perfil pessoal. B2B é feito entre pessoas.
+
+**Quinto**, e mais importante: garanta que existe processo comercial para receber esses leads. Se ainda não tem, comece pela [prospecção B2B](/blog/prospeccao-b2b-industrias) e pelo [funil de vendas](/blog/funil-vendas-industrial) antes de investir pesado em marketing.
+
+---
+
+*Precisa de ajuda para montar a estratégia digital da sua indústria? A Orbius conecta marketing e vendas para que o investimento realmente vire faturamento. [Agende um diagnóstico gratuito.](/#formulario)*`,
   },
   {
     slug: "gerar-leads-industrias",

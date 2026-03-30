@@ -837,9 +837,117 @@ Se sua indústria nunca fez marketing digital de verdade, não tente fazer tudo 
     cluster: "crm",
     isPillar: true,
     internalLinks: ["comparativo-crm-industrias", "implementar-crm-industria", "automacao-comercial-industrias", "integrar-crm-marketing-industria", "inside-sales-industrias", "ferramentas-prospeccao-b2b", "prospeccao-b2b-industrias", "metricas-gestao-comercial-industria"],
-    date: "",
-    published: false,
-    content: "",
+    date: "2026-03-26",
+    published: true,
+    content: `A Metalcorte é uma indústria fictícia, mas a história dela é real. Acontece em dezenas de fábricas brasileiras todo mês.
+
+A Metalcorte fabrica peças usinadas sob encomenda. Faturamento de R$ 8 milhões por ano, 45 funcionários, dois vendedores. O Seu Carlos fundou a empresa há 18 anos. Produto excelente, clientes fiéis, reputação sólida no mercado.
+
+O comercial funciona assim: o Ricardo, vendedor mais antigo, tem tudo na cabeça. Ele sabe quem pediu orçamento semana passada, quem está esperando aprovação interna, quem compra todo trimestre. Quando o Seu Carlos pergunta "como estão as vendas?", o Ricardo responde "estão andando". E isso basta — até o dia que não basta mais.
+
+## O mês em que tudo desandou
+
+Março. O Ricardo pegou Covid e ficou 15 dias fora. O telefone dele tocava e ninguém sabia quem era. Tinha um cliente que estava prestes a fechar um pedido de R$ 280 mil — mas ninguém sabia disso. O email ficou sem resposta por 9 dias. Quando o Ricardo voltou, o cliente já tinha fechado com outro fornecedor.
+
+O Seu Carlos perguntou: "Cadê o controle de quem está negociando o quê?"
+
+Resposta: uma planilha desatualizada de 2019 e o WhatsApp do Ricardo.
+
+Aquele pedido perdido doeu. Mas o que doeu mais foi perceber que não era a primeira vez — era só a primeira vez que ficou óbvio.
+
+## A planilha que virou CRM (e não funcionou)
+
+Primeira reação do Seu Carlos: montar uma planilha decente. Colunas para empresa, contato, valor estimado, etapa, próximo passo. O Ricardo preencheu durante duas semanas. O outro vendedor preencheu por três dias. Depois, a planilha morreu.
+
+Por quê? Porque planilha não avisa. Não lembra que você tem follow-up para fazer hoje. Não mostra que aquele lead está parado há 20 dias sem contato. Não soma automaticamente quanto tem no pipeline. Exige disciplina diária de quem já tem o dia cheio de ligação, visita e proposta.
+
+Planilha funciona para controle simples com poucos leads. Mas o momento que a Metalcorte precisava de controle — com dois vendedores, 40+ oportunidades abertas ao mesmo tempo e ciclo de vendas de 60 dias — planilha não dá conta.
+
+## O que é um CRM, afinal
+
+CRM significa Customer Relationship Management. Na prática, é um software onde você registra cada oportunidade de venda e acompanha ela do primeiro contato ao fechamento.
+
+Mas o CRM não é só uma planilha glorificada. A diferença real:
+
+**Com planilha:** Você depende de alguém lembrar de atualizar. Os dados ficam velhos rápido. Não tem alerta, não tem automação, não tem visão de pipeline. É um registro passivo.
+
+**Com CRM:** Cada oportunidade tem um histórico completo — emails trocados, ligações feitas, propostas enviadas. O sistema avisa quando tem follow-up atrasado. O gestor abre o dashboard e vê em tempo real: R$ 1,2 milhão em pipeline, 8 propostas pendentes, 3 deals parados há mais de 15 dias. É um sistema ativo.
+
+Para uma indústria que está [montando o funil de vendas](/blog/funil-vendas-industrial), o CRM é onde o funil vive. Sem ele, o funil existe no papel mas não na prática.
+
+## A escolha da Metalcorte
+
+O Seu Carlos pesquisou. Pediu indicação. Viu vídeo no YouTube. Ficou confuso com tanta opção. HubSpot, Pipedrive, RD Station, Ploomes, Salesforce, Bitrix...
+
+O erro que quase cometeu: escolher pela ferramenta mais completa. O Salesforce tem 500 funcionalidades. A Metalcorte precisa de 12. Pagar R$ 800/mês por vendedor para usar 2% da ferramenta não faz sentido.
+
+O que deveria guiar a escolha:
+
+**Tamanho da operação.** Dois vendedores não precisam de Salesforce. Precisam de algo simples que eles realmente vão usar. A ferramenta que o vendedor não usa é a mais cara do mercado — porque custou e não entregou nada.
+
+**Facilidade de uso.** O Ricardo tem 52 anos e não é do tipo que aprende software rápido. Se a ferramenta for complicada, ele vai voltar para o WhatsApp na primeira semana. O CRM precisa ser mais fácil que a planilha, não mais difícil.
+
+**Integrações.** O CRM conversa com o email? Com o WhatsApp? Com as [ferramentas de prospecção](/blog/ferramentas-prospeccao-b2b) que você pode usar no futuro? Uma ferramenta isolada vira mais uma ilha de informação.
+
+**Custo real.** Não é só a mensalidade. É o tempo de implementação, o treinamento, a migração de dados. Um CRM "grátis" que leva 3 meses para configurar pode custar mais que um pago que roda em uma semana.
+
+Para quem quer ver a comparação detalhada entre as opções do mercado brasileiro, montamos um [comparativo completo de CRMs para indústrias](/blog/comparativo-crm-industrias).
+
+## A implementação que funciona (e a que não funciona)
+
+A Metalcorte escolheu o Pipedrive. Simples, visual, R$ 60/mês por vendedor. Boa escolha. Mas a escolha da ferramenta é 20% do trabalho. Os outros 80% são implementação.
+
+### O que a maioria faz (e dá errado)
+
+Contrata a ferramenta. Convida os vendedores. Diz "comecem a usar". Resultado: ninguém sabe o que registrar, cada um usa de um jeito, em dois meses o CRM está tão bagunçado que ninguém confia nos dados.
+
+### O que a Metalcorte fez (e funcionou)
+
+**Primeiro, definiu as etapas do funil no CRM.** Não inventou — usou as etapas que já existiam na prática: Prospecção → Qualificação → Reunião técnica → Proposta → Negociação → Fechamento. Cada etapa com critério claro de entrada. Isso conecta diretamente com o [funil de vendas industrial](/blog/funil-vendas-industrial) que toda indústria deveria ter.
+
+**Segundo, criou campos obrigatórios mínimos.** Não 30 campos. Cinco: empresa, contato, valor estimado, próximo passo e data do próximo passo. Se o vendedor não preenche a data do próximo passo, o deal fica com alerta vermelho.
+
+**Terceiro, treinou em cenário real.** Não fez treinamento genérico. Pegou 10 oportunidades reais do Ricardo e cadastrou junto com ele. "Esse lead aqui, a Ferramentaria São Paulo, está em que etapa? Proposta enviada? Qual o valor? Quando é o follow-up?" Em uma hora, o Ricardo entendeu.
+
+**Quarto, fez reunião semanal de pipeline.** Toda segunda-feira, 30 minutos. Seu Carlos e os dois vendedores olham o dashboard: quantas oportunidades em cada etapa, quanto vale o pipeline, quais deals estão parados. Se o vendedor não atualizou, fica na cara. A reunião cria o hábito.
+
+Detalhamos todo esse processo no artigo sobre [como implementar um CRM na indústria sem travar a equipe](/blog/implementar-crm-industria).
+
+## Três meses depois
+
+O pipeline da Metalcorte em março (quando o Ricardo ficou doente): invisível.
+
+O pipeline em junho (três meses com CRM):
+
+- 47 oportunidades ativas
+- R$ 2,1 milhões em pipeline
+- 12 deals em fase de proposta/negociação
+- Tempo médio de follow-up: 3 dias (antes era "quando lembrava")
+- Zero oportunidades perdidas por falta de acompanhamento
+
+Mas o número mais importante: o Seu Carlos agora sabe, toda segunda-feira, quanto deve faturar nos próximos 60 dias. Não pergunta mais "como estão as vendas". Ele abre o dashboard e vê.
+
+E quando o Ricardo tirou férias em julho? O outro vendedor assumiu as oportunidades abertas sem perder uma. Tudo registrado, tudo com histórico. O cliente nem percebeu a troca.
+
+## O CRM como base para escalar
+
+O CRM sozinho não vende. Ele organiza. Mas essa organização é o que permite escalar.
+
+Quer [montar uma operação de inside sales](/blog/inside-sales-industrias)? Precisa de CRM. Quer medir [indicadores comerciais](/blog/metricas-gestao-comercial-industria) de verdade? Precisa de CRM. Quer [automatizar partes do processo](/blog/automacao-comercial-industrias)? Precisa de CRM. Quer que o [marketing e vendas conversem](/blog/integrar-crm-marketing-industria)? Precisa de CRM.
+
+Sem CRM, cada melhoria que você tenta fazer no comercial é construída em areia movediça. Com CRM, você tem fundação.
+
+## E se a sua indústria é a Metalcorte de março?
+
+Se o comercial da sua indústria depende da memória dos vendedores, se você não sabe quanto tem em pipeline, se o follow-up acontece "quando dá" — você está onde a Metalcorte estava.
+
+A boa notícia: sair desse cenário não é difícil. Não precisa de projeto de 6 meses. Não precisa de software de R$ 5 mil/mês. Precisa de ferramenta certa, implementação enxuta e disciplina nas primeiras 4 semanas.
+
+O primeiro passo é ter um [processo de prospecção](/blog/prospeccao-b2b-industrias) definido. O segundo é colocar esse processo dentro de um CRM. O terceiro é medir — e aí a história muda.
+
+---
+
+*A Orbius implementa CRM e processo comercial em indústrias B2B. Se o cenário da Metalcorte pareceu familiar, [agende um diagnóstico gratuito](/#formulario) e descubra quanto pipeline você está deixando escapar.*`,
   },
   {
     slug: "comparativo-crm-industrias",
@@ -932,9 +1040,150 @@ Se sua indústria nunca fez marketing digital de verdade, não tente fazer tudo 
     cluster: "metricas",
     isPillar: true,
     internalLinks: ["roi-marketing-b2b-industrial", "dashboard-comercial-industrias", "previsao-receita-pipeline-industrial", "taxa-conversao-b2b-benchmarks", "diagnosticar-gargalos-funil", "funil-vendas-industrial", "crm-ferramentas-industrias"],
-    date: "",
-    published: false,
-    content: "",
+    date: "2026-03-26",
+    published: true,
+    content: `Abre o dashboard da sua indústria agora. O que você vê?
+
+Se a resposta for "não tenho dashboard comercial" — esse artigo é para você.
+
+Se a resposta for "tenho, mas só olho o faturamento do mês" — esse artigo também é para você.
+
+Faturamento é resultado. E quando você só olha resultado, já é tarde para agir. É como dirigir olhando só pelo retrovisor. Os indicadores comerciais existem para mostrar o que vai acontecer nas próximas semanas — não o que já aconteceu.
+
+Vamos montar esse painel juntos. Imagine que estamos abrindo o dashboard ideal de uma indústria B2B. Tela dividida em blocos. Cada bloco conta uma parte da história do comercial.
+
+## Bloco 1: O pipeline (o quanto pode virar venda)
+
+Esse é o número mais importante que a maioria das indústrias não acompanha.
+
+**Pipeline total em R$:** a soma de todas as oportunidades abertas no [funil de vendas](/blog/funil-vendas-industrial), ponderada pela etapa. Nem tudo que está no funil vai fechar — então o pipeline ponderado desconta isso.
+
+Como calcular: cada etapa do funil tem uma probabilidade histórica de conversão.
+
+- Prospecção: 10%
+- Qualificação: 25%
+- Reunião técnica: 40%
+- Proposta enviada: 60%
+- Negociação: 80%
+
+Se você tem R$ 500 mil em propostas enviadas, o pipeline ponderado dessa etapa é R$ 300 mil (60%). Some todas as etapas e você tem uma previsão realista.
+
+**Por que isso importa:** Se a meta mensal é R$ 400 mil e o pipeline ponderado está em R$ 250 mil, você sabe — hoje, não no fim do mês — que vai faltar. Tempo de reagir: agora. Detalhamos a mecânica completa no artigo sobre [previsão de receita com pipeline](/blog/previsao-receita-pipeline-industrial).
+
+**Sinal de alerta:** Pipeline ponderado menor que 2x a meta mensal. Se sua meta é R$ 400 mil, você precisa de pelo menos R$ 800 mil em pipeline bruto para ter margem de segurança.
+
+## Bloco 2: As taxas de conversão (onde o funil trava)
+
+Olhar o pipeline sem olhar as taxas de conversão é como olhar o tanque de combustível sem olhar se tem furo.
+
+Cada passagem de etapa tem uma taxa:
+
+- **Prospecção → Qualificação:** de todas as empresas que você contatou, quantas avançaram para uma conversa real?
+- **Qualificação → Reunião:** dos que conversaram, quantos agendaram uma reunião técnica?
+- **Reunião → Proposta:** dos que tiveram reunião, quantos receberam proposta?
+- **Proposta → Fechamento:** das propostas enviadas, quantas viraram venda?
+
+Quando uma taxa cai, você encontrou o gargalo. E gargalos diferentes pedem soluções diferentes:
+
+**Taxa de prospecção baixa (menos de 5% de resposta):** O problema está na abordagem. O email está genérico, a mensagem no LinkedIn não está personalizada, o ICP está errado. Volte ao [processo de prospecção](/blog/prospeccao-b2b-industrias) e revise.
+
+**Taxa de reunião→proposta baixa:** O vendedor não está entendendo o cenário do cliente. Está apresentando produto em vez de entender problema. Treinamento em venda consultiva resolve.
+
+**Taxa de proposta→fechamento baixa (menos de 20%):** Ou as propostas não são competitivas, ou o follow-up está fraco, ou o vendedor está enviando proposta para quem não deveria (lead mal qualificado).
+
+Para benchmarks detalhados por setor, veja o artigo sobre [taxas de conversão B2B](/blog/taxa-conversao-b2b-benchmarks).
+
+## Bloco 3: A velocidade (quanto tempo leva para fechar)
+
+Ciclo de vendas é o tempo médio entre o primeiro contato e a assinatura do contrato.
+
+Na indústria B2B brasileira, o ciclo típico varia de 30 a 120 dias dependendo do ticket. Peça usinada sob encomenda de R$ 20 mil? 30-45 dias. Linha de produção de R$ 500 mil? 90-180 dias.
+
+**O que acompanhar:**
+
+**Ciclo médio geral:** Está subindo ou descendo? Se está subindo mês a mês, algo está travando. Pode ser processo interno do cliente, pode ser seu follow-up fraco, pode ser proposta chegando tarde.
+
+**Ciclo por etapa:** Quanto tempo o deal fica em cada etapa do funil? Se deals ficam 25 dias em "proposta enviada", o problema está claro — o cliente recebe e ninguém faz follow-up estruturado.
+
+**Deals parados:** Quantas oportunidades não tiveram nenhuma atividade nos últimos 15 dias? Esse é o indicador mais acionável do dashboard. Deal parado é deal morrendo. Se o [CRM](/blog/crm-ferramentas-industrias) não mostra isso automaticamente, você precisa de um que mostre.
+
+## Bloco 4: A atividade (o esforço que gera resultado)
+
+Os indicadores anteriores mostram resultado. Os de atividade mostram esforço. E sem esforço consistente, resultado não vem.
+
+**Empresas prospectadas por semana:** Quantos novos contatos o vendedor está fazendo? Se a resposta for "não sei", o problema começa aqui. Sem prospecção constante, o pipeline seca em 60-90 dias.
+
+**Reuniões realizadas por semana:** Prospecção vira reunião? Se o vendedor prospecta 50 empresas e faz 1 reunião, a abordagem está errada. Se prospecta 50 e faz 8, a máquina está funcionando.
+
+**Propostas enviadas por semana:** Reunião vira proposta? Se não, o vendedor está tendo reuniões improdutivas — ou está demorando demais para montar a proposta.
+
+**Follow-ups realizados:** Dos deals abertos, quantos receberam contato esta semana? Esse número deveria ser próximo de 100%. Deal aberto sem contato por mais de 5 dias úteis é negligência comercial.
+
+Não é microgerenciamento. É visibilidade. O vendedor que sabe que esses números são acompanhados naturalmente mantém o ritmo. E o gestor que vê esses números consegue ajudar antes do resultado piorar.
+
+## Bloco 5: O resultado (o que já aconteceu)
+
+Agora sim, os números que todo mundo olha:
+
+**Faturamento do mês:** Quanto fechou. Importante, mas é retrovisor.
+
+**Ticket médio:** O valor médio por venda fechada. Se está caindo, pode significar que o vendedor está dando desconto demais ou que o mix de clientes mudou.
+
+**CAC (Custo de Aquisição de Cliente):** Quanto custou para trazer cada novo cliente. Some todo o investimento em vendas e marketing e divida pelo número de clientes novos. Se o CAC está subindo, algo na eficiência está piorando. Aprofundamos esse cálculo no artigo sobre [ROI de marketing B2B](/blog/roi-marketing-b2b-industrial).
+
+**Win rate:** Das oportunidades que chegaram em proposta, qual percentual virou venda? E mais importante: **por que as outras não fecharam?**
+
+## Bloco 6: O diagnóstico (por que estamos perdendo)
+
+Esse bloco é o mais ignorado e o mais valioso.
+
+Toda oportunidade perdida deveria ter um motivo registrado no [CRM](/blog/crm-ferramentas-industrias). Depois de 3 meses, você tem dados suficientes para ver padrões:
+
+- "Preço alto" aparece em 40% das perdas? Revise o posicionamento ou a qualificação.
+- "Sem retorno do cliente" em 35%? O follow-up está fraco.
+- "Fechou com concorrente" em 25%? Mapeie quem está ganhando e por quê.
+
+Esses padrões revelam onde investir energia. Se 40% das perdas são por preço e você está gastando tempo treinando cold call, está resolvendo o problema errado.
+
+Montamos um framework completo para isso no artigo sobre [como diagnosticar gargalos no funil](/blog/diagnosticar-gargalos-funil).
+
+## Frequência: quando olhar cada número
+
+Nem todo indicador precisa de atenção diária. A cadência certa:
+
+**Diário (pelo vendedor):** Follow-ups do dia, deals parados, atividades pendentes. Isso é rotina no [CRM](/blog/crm-ferramentas-industrias) — não precisa de dashboard, precisa de disciplina.
+
+**Semanal (reunião de pipeline):** Pipeline total, deals por etapa, taxas de conversão, atividades realizadas. 30 minutos toda segunda-feira. É o ritual mais importante do comercial.
+
+**Mensal (revisão com a diretoria):** Faturamento, CAC, ticket médio, win rate, motivos de perda, tendências. É aqui que se toma decisão: contratar, investir em marketing, mudar estratégia.
+
+**Trimestral (revisão estratégica):** Metas batem com pipeline? O ciclo de vendas está saudável? Os canais de [marketing](/blog/marketing-digital-industrias) estão entregando leads qualificados? O ICP precisa ser ajustado?
+
+## O dashboard mínimo viável
+
+Não precisa começar com tudo. Se você não mede nada hoje, comece com cinco números:
+
+1. **Pipeline total em R$**
+2. **Número de oportunidades abertas**
+3. **Deals parados há mais de 15 dias**
+4. **Propostas enviadas esta semana**
+5. **Win rate do mês**
+
+Esses cinco números, acompanhados toda semana, já mudam completamente a visibilidade do comercial. O [CRM](/blog/crm-ferramentas-industrias) gera isso automaticamente — não precisa montar planilha.
+
+Para quem quer o dashboard completo com todos os painéis, detalhamos no artigo [dashboard comercial para indústrias](/blog/dashboard-comercial-industrias).
+
+## A diferença entre saber e agir
+
+Métricas não valem nada se ninguém age sobre elas. O dashboard é um mapa, não um GPS. Ele mostra onde você está, mas a decisão de mudar de rota é sua.
+
+Se o pipeline está baixo, a ação é intensificar [prospecção](/blog/prospeccao-b2b-industrias). Se a taxa de conversão caiu, a ação é investigar o gargalo. Se os deals estão parados, a ação é ligar hoje.
+
+A indústria que mede certo e age rápido cresce de forma previsível. A que não mede fica refém da sorte — e sorte não escala.
+
+---
+
+*Quer implementar um dashboard comercial na sua indústria? A Orbius monta o painel, configura no CRM e treina a equipe para usar. [Agende o diagnóstico gratuito.](/#formulario)*`,
   },
   {
     slug: "roi-marketing-b2b-industrial",
@@ -1014,9 +1263,119 @@ Se sua indústria nunca fez marketing digital de verdade, não tente fazer tudo 
     cluster: "equipe",
     isPillar: true,
     internalLinks: ["treinar-equipe-venda-consultiva", "vendedor-interno-vs-externo", "montar-time-vendas-industria", "comissionamento-vendedores-industriais", "cultura-vendas-industria", "prospeccao-b2b-industrias", "metricas-gestao-comercial-industria"],
-    date: "",
-    published: false,
-    content: "",
+    date: "2026-03-26",
+    published: true,
+    content: `Toda semana converso com donos de indústrias que têm a mesma dúvida sobre o time comercial. As perguntas se repetem com uma precisão impressionante. Então resolvi juntar as mais comuns e responder cada uma de forma direta.
+
+## "Tenho só um vendedor. É hora de contratar o segundo?"
+
+Depende. Não do faturamento, mas da capacidade.
+
+Se o seu vendedor atual está com o pipeline cheio, faz [prospecção](/blog/prospeccao-b2b-industrias) toda semana, cuida do follow-up e ainda assim não dá conta de atender todos os leads — sim, é hora.
+
+Mas se o pipeline dele está meio vazio e mesmo assim ele parece ocupado, o problema não é falta de gente. É falta de processo. Antes de contratar, responda: o vendedor atual tem cadência de prospecção definida? Tem [CRM](/blog/crm-ferramentas-industrias) atualizado? Sabe quantas oportunidades precisa abrir por semana para bater a meta?
+
+Se a resposta for não, contratar outro vendedor vai duplicar o caos, não o resultado. Primeiro processo, depois gente. Sempre nessa ordem.
+
+Para o passo a passo completo de como fazer essa primeira contratação, leia o artigo sobre [montar o primeiro time de vendas](/blog/montar-time-vendas-industria).
+
+## "Devo contratar vendedor interno ou representante externo?"
+
+Essa é a pergunta de um milhão. E a resposta mudou muito nos últimos anos.
+
+**Representante externo (rep comercial):** Já tem carteira, já conhece o mercado, já tem relacionamento. Parece perfeito. O problema? Ele vende para 5 fábricas ao mesmo tempo. Sua indústria é uma das cinco. Se a comissão do concorrente é melhor, adivinha quem ele prioriza.
+
+Além disso, o representante não segue seu processo. Ele tem o processo dele. Não usa seu CRM, não faz report semanal, não segue a cadência que você definiu. O relacionamento com o cliente é dele, não da sua empresa. Se ele sai, o cliente vai junto.
+
+**Vendedor interno (CLT ou PJ dedicado):** Custa mais fixo. Precisa de treinamento. Leva meses para performar. Mas segue o processo da empresa, registra tudo no [CRM](/blog/crm-ferramentas-industrias), e o relacionamento com o cliente fica na casa.
+
+**A recomendação para a maioria das indústrias:** Comece com inside sales (vendedor interno que prospecta e vende por telefone, email e videoconferência). Quando o volume justificar, adicione um representante externo para regiões específicas — mas com processo definido e CRM obrigatório.
+
+Aprofundamos essa análise com prós e contras detalhados no artigo sobre [vendedor interno vs externo na indústria](/blog/vendedor-interno-vs-externo).
+
+## "Meu vendedor é bom tecnicamente, mas não prospecta. O que faço?"
+
+Esse é o perfil clássico do vendedor industrial: entende o produto como ninguém, faz apresentação técnica impecável, mas não liga para lead novo. Espera o telefone tocar.
+
+O erro é achar que ele vai mudar sozinho. Não vai. Prospecção é habilidade diferente de venda técnica. Algumas opções:
+
+**Opção 1 — Divida as funções.** Um SDR (pré-vendedor) faz a prospecção e agenda reunião. O vendedor técnico entra na reunião qualificada. Funciona muito bem, mas exige volume para justificar o SDR.
+
+**Opção 2 — Bloco de prospecção obrigatório.** Reserve 2 horas por dia (de manhã, inegociável) só para prospecção. Com cadência definida, scripts prontos e [métricas semanais](/blog/metricas-gestao-comercial-industria). O vendedor técnico pode aprender a prospectar — mas precisa de estrutura, não de motivação.
+
+**Opção 3 — Terceirize a prospecção.** Uma consultoria gera reuniões qualificadas e entrega para o vendedor fechar. Ele faz o que sabe fazer de melhor. É o modelo que mais vemos funcionar em indústrias com 1-3 vendedores.
+
+## "Quanto pagar de comissão?"
+
+Não tem resposta universal, mas tem princípios que funcionam na indústria:
+
+**Fixo + variável é obrigatório.** 100% comissão não funciona para vendedor CLT de indústria — o ciclo de vendas é longo demais. Nos primeiros 3-4 meses ele não fecha nada e desiste. 100% fixo também não funciona — não tem incentivo para buscar resultado.
+
+**A proporção depende do ciclo.** Quanto mais longo o ciclo de vendas, maior deve ser o fixo proporcional.
+
+- Ciclo curto (até 30 dias): 40% fixo / 60% variável
+- Ciclo médio (30-90 dias): 60% fixo / 40% variável
+- Ciclo longo (90+ dias): 70% fixo / 30% variável
+
+**Comissione sobre margem, não sobre faturamento.** Se o vendedor dá 15% de desconto para fechar, a comissão dele deve sentir esse desconto. Caso contrário, ele vai dar desconto sempre — e a margem da fábrica que paga.
+
+**Tenha um acelerador.** Acima de 100% da meta, a comissão sobe. 110% da meta? Comissão dobra no que exceder. Isso premia quem performa acima e cria incentivo real.
+
+Os modelos mais usados na indústria brasileira estão detalhados no artigo sobre [comissionamento para vendedores industriais](/blog/comissionamento-vendedores-industriais).
+
+## "Contratei e não deu certo. O que fiz de errado?"
+
+Quase sempre, um desses três:
+
+**1. Contratou pelo currículo, não pelo perfil.** Na indústria, todo mundo quer o vendedor que "já tem carteira no setor". Faz sentido, mas carteira sem processo é o mesmo problema que você já tem. Às vezes o vendedor que vem de outro setor mas tem disciplina de prospecção entrega mais que o veterano que vive de indicação.
+
+**2. Não deu onboarding.** O vendedor entrou e ouviu "faz como o Ricardo faz". Sem script, sem cadência, sem meta clara, sem treinamento de produto estruturado. Ficou perdido 3 meses e saiu. A culpa não é dele — é da falta de processo. Aprenda como treinar certo no artigo sobre [treinamento para venda consultiva](/blog/treinar-equipe-venda-consultiva).
+
+**3. Não mediu cedo o suficiente.** Se depois de 60 dias o vendedor novo não está abrindo pipeline (mesmo que não tenha fechado nada ainda), precisa intervir. Olhe as [métricas de atividade](/blog/metricas-gestao-comercial-industria): quantas empresas prospectou, quantas reuniões agendou, quantas propostas mandou. Se os números de atividade estão baixos, o problema é esforço ou método — e dá para corrigir. Se os números são altos mas não convertem, o problema é qualidade — e o treinamento resolve.
+
+## "Como faço meu time vender mais sem contratar?"
+
+Três alavancas:
+
+**Alavanca 1 — Aumente a taxa de conversão.** Se o vendedor fecha 20% das propostas e você consegue subir para 30%, ele "vendeu 50% a mais" sem prospectar uma empresa a mais. Como? Melhor qualificação (só manda proposta para quem realmente vai comprar), follow-up mais apertado, proposta mais personalizada.
+
+**Alavanca 2 — Aumente o ticket médio.** Upsell e cross-sell na hora da proposta. "Você está levando a linha de usinagem. Quer incluir o contrato de manutenção preventiva?" Se 30% aceitam, o ticket médio sobe sem esforço adicional de prospecção.
+
+**Alavanca 3 — Diminua o ciclo de vendas.** Se o ciclo médio cai de 75 para 50 dias, cada vendedor fecha mais negócios por trimestre. Como encurtar? Qualificação mais rígida no início (não perde tempo com lead frio), proposta mais rápida (não leva 2 semanas para montar), follow-up no ritmo certo (a cada 3-5 dias, não a cada 15).
+
+## "Preciso de um gerente comercial?"
+
+Se você tem até 3 vendedores e participa das decisões comerciais — não. Você é o gerente. Invista em [CRM](/blog/crm-ferramentas-industrias) e reunião semanal de pipeline. Isso dá a visibilidade que um gerente daria.
+
+Se você tem 4+ vendedores e não quer (ou não pode) participar do dia a dia comercial — sim. Mas cuidado: não promova o melhor vendedor automaticamente. Gestão exige habilidade diferente de venda. O melhor vendedor frequentemente vira o pior gerente — porque não sabe ensinar o que faz por instinto.
+
+O perfil ideal de gerente comercial para indústria: alguém que entende de processo, sabe ler [métricas](/blog/metricas-gestao-comercial-industria), tem paciência para treinar e não tem medo de cobrar.
+
+## "O time comercial não tem cultura de vendas. Como mudo isso?"
+
+Cultura não se impõe — se constrói. E na indústria, onde o comercial sempre foi tratado como "mal necessário" enquanto a produção era o herói, mudar a cultura leva tempo.
+
+Três coisas que criam cultura de vendas:
+
+**Visibilidade.** Quando o dashboard de vendas fica visível para a empresa, vendas deixa de ser caixa preta. O pessoal da produção vê que tem R$ 2 milhões em pipeline. O financeiro vê que 8 propostas estão pendentes. Vendas ganha respeito quando fica transparente.
+
+**Celebração.** Fechou um deal grande? O comercial inteiro sabe. A produção sabe. O Seu Carlos manda mensagem parabenizando. Parece bobagem, mas reconhecimento público cria motivação que nenhuma comissão extra cria.
+
+**Processo.** Parece contraditório, mas processo gera cultura. Quando tem reunião semanal, meta clara, CRM atualizado e cobrança justa — o time entende que vendas é sério. Não é "o que der, deu". É disciplina, como qualquer outra área da fábrica.
+
+Aprofundamos esse tema no artigo sobre [cultura de vendas na indústria](/blog/cultura-vendas-industria).
+
+## A pergunta que ninguém faz (mas deveria)
+
+"O problema do meu comercial é gente ou é processo?"
+
+Na maioria das vezes, é processo. O vendedor mediano com processo bom vende mais que o vendedor excelente sem processo. Porque processo cria consistência. Vendedor bom sem processo tem meses incríveis e meses desastrosos. Vendedor médio com processo tem meses consistentes — e consistência ganha no longo prazo.
+
+Antes de trocar o time, troque o sistema. Defina o [funil](/blog/funil-vendas-industrial), implemente o [CRM](/blog/crm-ferramentas-industrias), crie as cadências de [prospecção](/blog/prospeccao-b2b-industrias) e meça os [indicadores](/blog/metricas-gestao-comercial-industria) certos. Depois — e só depois — avalie se precisa de gente diferente.
+
+---
+
+*A Orbius estrutura equipes comerciais para indústrias B2B: processo, CRM, métricas e treinamento. Se o comercial da sua fábrica precisa de organização, [agende o diagnóstico gratuito](/#formulario).*`,
   },
   {
     slug: "treinar-equipe-venda-consultiva",
@@ -1096,9 +1455,136 @@ Se sua indústria nunca fez marketing digital de verdade, não tente fazer tudo 
     cluster: "cases",
     isPillar: true,
     internalLinks: ["custo-terceirizar-prospeccao", "consultoria-vs-contratar-vendedor", "sinais-comercial-travado", "escolher-consultoria-vendas-b2b", "case-0-a-20-clientes-outbound", "industrias-perdem-vendas-sem-processo", "prospeccao-b2b-industrias", "equipe-comercial-industria"],
-    date: "",
-    published: false,
-    content: "",
+    date: "2026-03-26",
+    published: true,
+    content: `Vou ser direto: consultoria de vendas não é para todo mundo. Não é bala de prata. E a maioria das indústrias que contrata faz pelo motivo errado.
+
+Então, antes de responder se vale a pena, vamos fazer um diagnóstico rápido. Responda mentalmente cada pergunta abaixo.
+
+## Diagnóstico: 8 sinais de que o comercial da sua indústria precisa de ajuda externa
+
+**1. Você depende de 1-2 pessoas para vender.**
+Se o vendedor principal sair amanhã, o faturamento despenca nos próximos 3 meses? Se sim, você não tem processo comercial — tem um funcionário insubstituível. E tudo que é insubstituível é um risco.
+
+**2. O pipeline é invisível.**
+Quando alguém pergunta "quantas oportunidades abertas temos?", ninguém sabe responder com precisão? Se o [funil de vendas](/blog/funil-vendas-industrial) não existe ou é um mistério, o comercial opera no escuro.
+
+**3. Prospecção não existe como atividade.**
+Os clientes chegam por indicação, feira, ou sorte? Não tem ninguém ativamente buscando novos clientes toda semana? Sem [prospecção ativa](/blog/prospeccao-b2b-industrias), o fluxo de novos negócios é imprevisível por definição.
+
+**4. O CRM é uma planilha abandonada (ou não existe).**
+Se a informação comercial mora na cabeça do vendedor e no WhatsApp dele, cada saída de funcionário é uma hemorragia. Sem [CRM funcionando](/blog/crm-ferramentas-industrias), não dá para gerir o que não se vê.
+
+**5. Você não sabe o custo de aquisição de cliente.**
+Quanto custa trazer um cliente novo? Se a resposta for "nunca calculei", você pode estar gastando R$ 50 mil para trazer um cliente que vale R$ 30 mil. Os [indicadores comerciais](/blog/metricas-gestao-comercial-industria) contam essa história — mas só se alguém estiver medindo.
+
+**6. Já tentou contratar vendedor e não funcionou.**
+Um, dois, três vendedores. Entraram, não performaram, saíram. O padrão se repete e você começa a achar que "não existe vendedor bom". Na maioria das vezes, o problema não é o vendedor — é a falta de [estrutura para o time funcionar](/blog/equipe-comercial-industria).
+
+**7. Vendas crescem num trimestre e despencam no seguinte.**
+Montanha-russa de faturamento é sintoma clássico de ausência de processo. Quando não tem pipeline alimentado constantemente, tem meses fartos (quando um grande deal fecha) e meses secos (quando nada está maduro).
+
+**8. O dono faz tudo.**
+Vende, negocia, cuida de produção, resolve financeiro. Não sobra tempo para pensar em crescimento porque está preso na operação. Esse é talvez o sinal mais claro de que precisa de ajuda — não porque é incapaz, mas porque não escala.
+
+**Contagem:**
+- **6-8 sinais:** O comercial precisa de intervenção urgente. Consultoria faz sentido agora.
+- **3-5 sinais:** Tem problemas estruturais. Consultoria pode acelerar, mas avalie se consegue resolver internamente primeiro.
+- **0-2 sinais:** Provavelmente não precisa de consultoria. O comercial tem base — pode ser que precise só de ajustes pontuais.
+
+Para um diagnóstico mais profundo de cada sinal, leia sobre os [sinais de que o comercial da sua indústria está travado](/blog/sinais-comercial-travado).
+
+## O que uma consultoria de vendas faz (de verdade)
+
+Existe muita confusão. Consultoria de vendas não é:
+- Treinamento motivacional de fim de semana
+- Alguém que vende no seu lugar
+- Palestra sobre "mindset de vendedor"
+- Um guru que fala bonito e não implementa nada
+
+Uma boa consultoria de vendas para indústria faz o trabalho duro:
+
+**Diagnóstico real.** Entra na operação, fala com os vendedores, ouve ligações, lê propostas, analisa o pipeline (se existir). Identifica onde o dinheiro está vazando.
+
+**Montagem de processo.** Define ICP, cria cadências de prospecção, implementa funil no CRM, escreve scripts de abordagem, define critérios de qualificação. Tudo adaptado para a realidade da sua indústria — não é template genérico.
+
+**Implementação.** Não entrega um PDF de 80 páginas e vai embora. Implementa no CRM, treina os vendedores no processo novo, acompanha as primeiras semanas, ajusta o que não funciona.
+
+**Acompanhamento com métricas.** Define os [KPIs](/blog/metricas-gestao-comercial-industria) certos, monta o dashboard, e acompanha a execução semana a semana. Se o vendedor não está seguindo a cadência, a consultoria identifica e corrige.
+
+## Consultoria vs. contratar vendedor: a conta real
+
+A comparação mais comum. "Por esse valor eu contrato um vendedor." Vamos fazer a conta:
+
+**Contratar vendedor:**
+- Salário + encargos: R$ 6-10 mil/mês
+- Tempo até performar: 3-6 meses
+- Risco de não funcionar (sem processo): alto
+- Se sair em 6 meses: R$ 60-80 mil perdidos
+- Resultado provável sem processo: imprevisível
+
+**Contratar consultoria:**
+- Investimento mensal: R$ 5-15 mil/mês (varia muito)
+- Duração típica: 3-6 meses
+- Entrega: processo montado, CRM implementado, time treinado
+- Se funcionar: o processo fica depois que a consultoria sai
+- Resultado provável: pipeline visível em 60 dias, vendas em 90-120 dias
+
+A diferença fundamental: o vendedor sem processo é uma aposta. A consultoria constrói o sistema que faz qualquer vendedor performar. O processo fica na empresa para sempre. O vendedor pode ir embora amanhã.
+
+Detalhamos essa comparação com cenários de custo reais no artigo [consultoria comercial vs contratar vendedor](/blog/consultoria-vs-contratar-vendedor). Para entender os valores de mercado para terceirizar apenas a prospecção, veja [quanto custa terceirizar a prospecção](/blog/custo-terceirizar-prospeccao).
+
+## Quando NÃO contratar consultoria
+
+Honestidade é fundamental. Consultoria não resolve tudo. Não contrate se:
+
+**Você não vai mudar nada.** Se contrata consultoria esperando que ela faça mágica sem mudar a forma como o comercial opera — vai frustrar. Consultoria exige abertura para mudar processo, ferramenta, e às vezes pessoas.
+
+**O problema é o produto, não a venda.** Se o mercado não quer o que você vende, nenhum processo comercial salva. Antes de investir em vendas, valide se existe demanda real.
+
+**Não tem verba para o básico.** Se não tem R$ 200/mês para CRM e R$ 500/mês para ferramentas de prospecção, não tem condição de implementar o que a consultoria vai recomendar. Primeiro resolva o caixa, depois pense em escalar.
+
+**Quer resultado amanhã.** Processo comercial leva 60-90 dias para mostrar resultado em vendas industriais (o ciclo de vendas não encurta por mágica). Se precisa de faturamento semana que vem, consultoria não é a resposta — promoção e desconto são. Mas isso é curativo, não tratamento.
+
+## Como escolher a consultoria certa
+
+Se decidiu que faz sentido, o próximo passo é escolher bem. O mercado tem muita consultoria de vendas. Poucas entendem de indústria.
+
+**Pergunte sobre experiência no setor industrial.** B2B industrial é diferente de B2B SaaS, que é diferente de B2C. O ciclo é mais longo, o decisor é mais técnico, o relacionamento pesa mais. Consultoria que só trabalhou com startup de tecnologia vai aplicar playbook que não funciona na fábrica.
+
+**Peça para ver o processo, não o resultado.** "Ajudamos empresa X a crescer 300%" é marketing. Pergunte: como? Qual era o cenário? O que foi implementado? Quanto tempo levou? O resultado se manteve depois que vocês saíram?
+
+**Confirme que implementam.** A diferença entre consultoria boa e ruim é execução. Se entregam só diagnóstico e recomendação, você vai ter um documento bonito e nenhuma mudança. Precisa ser mão na massa: configurar CRM, treinar vendedor, montar cadência.
+
+**Veja se medem resultado.** Toda consultoria séria define métricas no início e reporta evolução. Se não propõem dashboard de acompanhamento, não sabem medir o próprio trabalho.
+
+Montamos um checklist completo no artigo sobre [como escolher uma consultoria de vendas B2B](/blog/escolher-consultoria-vendas-b2b).
+
+## O resultado que uma indústria pode esperar
+
+Sem prometer números (cada caso é um caso), o que tipicamente acontece quando uma indústria implementa processo comercial com ajuda de consultoria:
+
+**Primeiros 30 dias:** CRM implementado, funil definido, cadência de prospecção rodando. O pipeline começa a encher. Ainda não tem venda nova, mas pela primeira vez existe visibilidade.
+
+**60 dias:** As primeiras reuniões agendadas via prospecção ativa começam a virar proposta. O vendedor está se acostumando com o novo processo. Alguns ajustes finos no script e na qualificação.
+
+**90 dias:** Os primeiros deals oriundos do novo processo fecham. A reunião semanal de pipeline já é hábito. O dashboard mostra dados reais. O dono da indústria pela primeira vez sabe responder: "quanto vou faturar no próximo trimestre?"
+
+**6 meses:** O processo está maduro. O time faz sem precisar de acompanhamento externo. A base de clientes prospectados cresce todo mês. A dependência de indicação caiu pela metade. O comercial opera como a produção: com processo, métrica e previsibilidade.
+
+Leia um exemplo concreto desse processo no artigo [case: como uma indústria saiu de 0 a 20 clientes com outbound](/blog/case-0-a-20-clientes-outbound).
+
+## A pergunta final
+
+Volte ao diagnóstico lá em cima. Some seus sinais. Olhe para o custo de não fazer nada — os deals perdidos por falta de follow-up, o vendedor que saiu e levou a carteira, os meses de montanha-russa.
+
+Consultoria é investimento, não custo. Mas só se for a hora certa, pelo motivo certo, com a consultoria certa.
+
+Se o seu diagnóstico apontou 6+ sinais, o [comercial da sua indústria está travado](/blog/sinais-comercial-travado) e cada mês sem ação é receita [que fica na mesa](/blog/industrias-perdem-vendas-sem-processo).
+
+---
+
+*A Orbius é consultoria de processo comercial especializada em indústrias B2B. Se o diagnóstico acima pareceu familiar, [agende uma conversa gratuita](/#formulario) e vamos entender juntos se faz sentido para o seu momento.*`,
   },
   {
     slug: "custo-terceirizar-prospeccao",

@@ -4,7 +4,7 @@ import { AnimatedSection } from "./AnimatedSection";
 
 export function Hero() {
   return (
-    <section className="relative bg-navy min-h-screen flex items-center justify-center pt-24">
+    <section className="relative bg-[#080808] min-h-screen flex items-center justify-center pt-24">
       <div className="mx-auto max-w-[720px] px-6 py-20 md:py-36 text-center relative">
         <AnimatedSection>
           <div className="inline-flex items-center gap-2.5 border border-white/20 rounded-full px-5 py-2.5 mb-10">

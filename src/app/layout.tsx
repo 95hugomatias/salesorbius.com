@@ -1,32 +1,32 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  style: ["normal", "italic"],
+  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Orbius | Processo Comercial para Indústrias B2B",
+  title: "Salesorbius | Processo Comercial para Indústrias B2B",
   description:
-    "A Orbius ajuda indústrias B2B a vender todo mês com previsibilidade. Processo comercial estruturado, da prospecção ao fechamento, sem depender de indicação ou vendedor-estrela.",
+    "A Salesorbius ajuda indústrias B2B a vender todo mês com previsibilidade. Processo comercial estruturado, da prospecção ao fechamento, sem depender de indicação ou vendedor-estrela.",
   keywords: [
     "processo comercial",
     "vendas B2B",
     "indústria",
     "prospecção",
     "pipeline de vendas",
+    "diretor comercial terceirizado",
   ],
   openGraph: {
-    title: "Orbius | Processo Comercial para Indústrias B2B",
+    title: "Salesorbius | Processo Comercial para Indústrias B2B",
     description:
       "Ajudamos indústrias a vender todo mês com previsibilidade, sem depender de indicação ou vendedor-estrela.",
     url: "https://salesorbius.com",
-    siteName: "Orbius",
+    siteName: "Salesorbius",
     locale: "pt_BR",
     type: "website",
   },
@@ -38,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={poppins.variable}>
+    <html lang="pt-BR" className={spaceGrotesk.variable}>
       <body>{children}</body>
     </html>
   );

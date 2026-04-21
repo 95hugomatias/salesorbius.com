@@ -9,6 +9,56 @@ const links = [
   { href: "/blog", label: "Blog" },
 ];
 
+function OrbitalMark({ size = 32 }: { size?: number }) {
+  const r = size / 2;
+  const rx = r * 0.85;
+  const ry = r * 0.38;
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox={`${-r} ${-r} ${size} ${size}`}
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      {/* Horizontal orbit — back arc */}
+      <path
+        d={`M ${-rx} 0 A ${rx} ${ry} 0 0 0 ${rx} 0`}
+        fill="none"
+        stroke="rgba(255,255,255,0.22)"
+        strokeWidth="1.2"
+      />
+      {/* Horizontal orbit — front arc */}
+      <path
+        d={`M ${-rx} 0 A ${rx} ${ry} 0 0 1 ${rx} 0`}
+        fill="none"
+        stroke="rgba(255,255,255,0.58)"
+        strokeWidth="1.2"
+      />
+      {/* Tilted orbit — back arc */}
+      <path
+        d={`M ${-rx} 0 A ${rx} ${ry} 0 0 0 ${rx} 0`}
+        fill="none"
+        stroke="rgba(255,255,255,0.22)"
+        strokeWidth="1.2"
+        transform="rotate(68)"
+      />
+      {/* Tilted orbit — front arc (orange) */}
+      <path
+        d={`M ${-rx} 0 A ${rx} ${ry} 0 0 1 ${rx} 0`}
+        fill="none"
+        stroke="#E05718"
+        strokeWidth="1.6"
+        transform="rotate(68)"
+      />
+      {/* Satellite */}
+      <circle cx={rx} cy={0} r={r * 0.1} fill="rgba(255,255,255,0.4)" />
+      {/* Core */}
+      <circle cx={0} cy={0} r={r * 0.19} fill="#E05718" />
+    </svg>
+  );
+}
+
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -26,14 +76,15 @@ export function Navbar() {
       }`}
     >
       <div className="mx-auto max-w-6xl px-6 flex items-center justify-between h-20 md:h-24">
-        <a
-          href="#"
-          className="text-white text-sm font-bold tracking-[0.35em] uppercase"
-        >
-          ORBIUS
+        {/* Logo */}
+        <a href="#" className="flex items-center gap-2.5 text-white">
+          <OrbitalMark size={32} />
+          <span className="text-sm font-bold tracking-[0.22em] uppercase">
+            Salesorbius
+          </span>
         </a>
 
-        {/* Desktop */}
+        {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-10">
           {links.map((link) => (
             <a
@@ -46,7 +97,7 @@ export function Navbar() {
           ))}
           <a
             href="#formulario"
-            className="text-white text-sm font-semibold border border-white/40 px-7 py-3 rounded-full hover:bg-white hover:text-navy transition-all duration-300"
+            className="text-white text-sm font-semibold bg-[#E05718] hover:bg-[#c44d14] px-7 py-3 rounded-full transition-all duration-300"
           >
             Agendar Diagnóstico Gratuito
           </a>
@@ -91,7 +142,7 @@ export function Navbar() {
           <a
             href="#formulario"
             onClick={() => setMenuOpen(false)}
-            className="text-white text-sm font-semibold border border-white/40 px-7 py-3 rounded-full text-center hover:bg-white hover:text-navy transition-all duration-300"
+            className="text-white text-sm font-semibold bg-[#E05718] hover:bg-[#c44d14] px-7 py-3 rounded-full text-center transition-all duration-300"
           >
             Agendar Diagnóstico Gratuito
           </a>

@@ -8,7 +8,7 @@ export function QuemSomos() {
       <div className="mx-auto max-w-[720px] px-6 text-center">
         <AnimatedSection>
           <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold leading-[1.2] text-navy mb-14">
-            A Orbius faz uma coisa só: monta{" "}
+            A Salesorbius faz uma coisa só: monta{" "}
             <em className="italic font-bold">processo comercial</em> pra indústria
             B2B.
           </h2>

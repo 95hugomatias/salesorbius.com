@@ -77,7 +77,6 @@ function validateEmail(email: string): string | null {
 
 function validatePhone(phone: string): string | null {
   const digits = phone.replace(/\D/g, "");
-  // BR phone: DDD (2 digits) + number (8 or 9 digits) = 10 or 11 digits
   if (digits.length < 10 || digits.length > 11) {
     return "Telefone inválido. Inclua o DDD + número (ex: 11 99999-9999).";
   }
@@ -85,7 +84,7 @@ function validatePhone(phone: string): string | null {
 }
 
 function validateSite(site: string): string | null {
-  if (!site) return null; // not required
+  if (!site) return null;
   const urlRegex = /^(https?:\/\/)?([\w-]+\.)+[\w-]{2,}(\/\S*)?$/i;
   if (!urlRegex.test(site)) {
     return "URL inválida. Ex: www.suaempresa.com.br";
@@ -212,7 +211,6 @@ export function Formulario() {
         ) : (
           <AnimatedSection>
             <form onSubmit={handleSubmit} className="space-y-4 text-left">
-              {/* 1. Nome */}
               <div>
                 <input
                   type="text"
@@ -223,7 +221,6 @@ export function Formulario() {
                 />
               </div>
 
-              {/* 2. Telefone com DDD */}
               <div>
                 <input
                   type="tel"
@@ -240,7 +237,6 @@ export function Formulario() {
                 {errors.telefone && <p className={errorClass}>{errors.telefone}</p>}
               </div>
 
-              {/* 3. E-mail corporativo */}
               <div>
                 <input
                   type="email"
@@ -255,7 +251,6 @@ export function Formulario() {
                 {errors.email && <p className={errorClass}>{errors.email}</p>}
               </div>
 
-              {/* 4. Nome da empresa */}
               <div>
                 <input
                   type="text"
@@ -266,7 +261,6 @@ export function Formulario() {
                 />
               </div>
 
-              {/* 5. Site da empresa (não obrigatório) */}
               <div>
                 <input
                   type="text"
@@ -280,7 +274,6 @@ export function Formulario() {
                 {errors.site && <p className={errorClass}>{errors.site}</p>}
               </div>
 
-              {/* 6. Setor da indústria */}
               <div>
                 <select
                   name="setor"
@@ -289,16 +282,13 @@ export function Formulario() {
                   className={selectClass}
                   style={selectStyle}
                 >
-                  <option value="" disabled>
-                    Setor da indústria *
-                  </option>
+                  <option value="" disabled>Setor da indústria *</option>
                   {setorOptions.map((opt) => (
                     <option key={opt} value={opt}>{opt}</option>
                   ))}
                 </select>
               </div>
 
-              {/* 7. Faturamento anual */}
               <div>
                 <select
                   name="faturamento"
@@ -307,16 +297,13 @@ export function Formulario() {
                   className={selectClass}
                   style={selectStyle}
                 >
-                  <option value="" disabled>
-                    Faturamento anual da empresa *
-                  </option>
+                  <option value="" disabled>Faturamento anual da empresa *</option>
                   {faturamentoOptions.map((opt) => (
                     <option key={opt} value={opt}>{opt}</option>
                   ))}
                 </select>
               </div>
 
-              {/* 8. Quantidade de funcionários */}
               <div>
                 <select
                   name="funcionarios"
@@ -325,16 +312,13 @@ export function Formulario() {
                   className={selectClass}
                   style={selectStyle}
                 >
-                  <option value="" disabled>
-                    Quantidade de funcionários *
-                  </option>
+                  <option value="" disabled>Quantidade de funcionários *</option>
                   {funcionariosOptions.map((opt) => (
                     <option key={opt} value={opt}>{opt}</option>
                   ))}
                 </select>
               </div>
 
-              {/* 9. O que mais trava suas vendas */}
               <div>
                 <select
                   name="desafio"
@@ -343,16 +327,13 @@ export function Formulario() {
                   className={selectClass}
                   style={selectStyle}
                 >
-                  <option value="" disabled>
-                    O que mais trava suas vendas hoje? *
-                  </option>
+                  <option value="" disabled>O que mais trava suas vendas hoje? *</option>
                   {desafioOptions.map((opt) => (
                     <option key={opt} value={opt}>{opt}</option>
                   ))}
                 </select>
               </div>
 
-              {/* 10. Como nos conheceu */}
               <div>
                 <select
                   name="comoConheceu"
@@ -361,16 +342,13 @@ export function Formulario() {
                   className={selectClass}
                   style={selectStyle}
                 >
-                  <option value="" disabled>
-                    Como nos conheceu? *
-                  </option>
+                  <option value="" disabled>Como nos conheceu? *</option>
                   {comoConheceuOptions.map((opt) => (
                     <option key={opt} value={opt}>{opt}</option>
                   ))}
                 </select>
               </div>
 
-              {/* LGPD opt-in */}
               <div className="pt-2">
                 <label className="flex items-start gap-3 cursor-pointer">
                   <input
@@ -383,7 +361,7 @@ export function Formulario() {
                     className="mt-1 h-4 w-4 rounded border-navy/30 accent-navy flex-shrink-0"
                   />
                   <span className="text-navy/50 text-xs leading-relaxed">
-                    Ao enviar este formulário, autorizo a Orbius a entrar em contato
+                    Ao enviar este formulário, autorizo a Salesorbius a entrar em contato
                     comigo por telefone, e-mail ou WhatsApp para fins exclusivamente
                     comerciais. Seus dados não serão compartilhados com terceiros e
                     serão tratados conforme a Lei Geral de Proteção de Dados (LGPD —
@@ -394,7 +372,6 @@ export function Formulario() {
                 {errors.lgpd && <p className={errorClass}>{errors.lgpd}</p>}
               </div>
 
-              {/* Submit */}
               <div className="pt-3">
                 <button
                   type="submit"

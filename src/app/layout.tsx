@@ -21,6 +21,9 @@ export const metadata: Metadata = {
     "pipeline de vendas",
     "diretor comercial terceirizado",
   ],
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     title: "Salesorbius | Processo Comercial para Indústrias B2B",
     description:

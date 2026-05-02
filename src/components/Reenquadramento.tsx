@@ -1,53 +1,72 @@
 "use client";
 
-import { AnimatedSection } from "./AnimatedSection";
+import { AnimatedSection, StaggerContainer, StaggerItem } from "./AnimatedSection";
+
+const ciclo = [
+  { step: "01", title: "Abre vaga", description: "Vendas fracas. Reflexo: contratar mais um representante." },
+  { step: "02", title: "Sem processo", description: "Sem CRM, sem cadência, sem critério de qualificação." },
+  { step: "03", title: "Não bate meta", description: "6 meses tentando do jeito dele. Frustração dos dois lados." },
+  { step: "04", title: "Sai. Repete.", description: "Você volta ao início. Custo sobe. Crescimento emperra." },
+];
 
 export function Reenquadramento() {
   return (
     <section className="bg-white py-20 md:py-[140px]" id="como-funciona">
-      <div className="mx-auto max-w-[720px] px-6 text-center">
+      <div className="mx-auto max-w-5xl px-6">
         <AnimatedSection>
-          <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold leading-[1.2] text-navy mb-14">
+          <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-bold leading-[1.2] text-navy mb-4 text-center max-w-[720px] mx-auto">
             Sabe qual o erro que quase toda indústria comete? Tentar resolver
-            vendas <em className="italic font-bold">contratando mais gente</em>.
+            vendas{" "}
+            <em className="italic font-bold">contratando mais gente</em>.
           </h2>
         </AnimatedSection>
 
-        <div className="space-y-7 text-navy/75 text-lg leading-[1.8] text-left max-w-[620px] mx-auto">
-          <AnimatedSection>
-            <p>
-              Eu vejo isso o tempo todo. A venda não tá boa, o reflexo é abrir
-              vaga: &ldquo;preciso de um vendedor com carteira&rdquo;,
-              &ldquo;preciso de mais um representante&rdquo;.
-            </p>
-          </AnimatedSection>
+        <AnimatedSection delay={0.1}>
+          <p className="text-navy/50 text-base font-medium text-center mb-16 max-w-[480px] mx-auto">
+            O ciclo se repete porque o problema não é o vendedor — é a falta de processo.
+          </p>
+        </AnimatedSection>
 
-          <AnimatedSection delay={0.1}>
-            <p>
-              Aí o cara entra. Não tem cadência definida, não tem CRM
-              funcionando, não tem critério claro do que é um lead bom. Ele faz
-              do jeito dele durante uns 6 meses, não consegue bater meta de
-              forma consistente, fica frustrado e vai embora.
-            </p>
-          </AnimatedSection>
+        {/* Cycle flow */}
+        <StaggerContainer className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+          {ciclo.map((item, i) => (
+            <StaggerItem key={item.step}>
+              <div className="relative">
+                <div className="border border-navy/10 rounded-2xl p-6 h-full hover:border-navy/20 transition-all duration-500">
+                  <div className="text-[#E05718] text-xs font-bold tracking-widest uppercase mb-4">
+                    {item.step}
+                  </div>
+                  <h3 className="text-navy font-bold text-base mb-2">{item.title}</h3>
+                  <p className="text-navy/50 text-sm leading-relaxed font-medium">
+                    {item.description}
+                  </p>
+                </div>
+                {/* Arrow between cards */}
+                {i < ciclo.length - 1 && (
+                  <div className="hidden md:flex absolute -right-3 top-1/2 -translate-y-1/2 z-10 items-center justify-center w-6 h-6 bg-white">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M3 8h10M9 4l4 4-4 4" stroke="#E05718" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </div>
+                )}
+              </div>
+            </StaggerItem>
+          ))}
+        </StaggerContainer>
 
-          <AnimatedSection delay={0.15}>
-            <p>
-              Você contrata outro. O ciclo repete. O custo sobe. O crescimento
-              emperra.
+        {/* Resolution */}
+        <AnimatedSection delay={0.4}>
+          <div className="border border-navy/8 rounded-2xl p-8 md:p-10 bg-navy/[0.02] text-center max-w-[640px] mx-auto">
+            <div className="text-[#E05718] text-xs font-bold tracking-widest uppercase mb-4">
+              A saída do ciclo
+            </div>
+            <p className="text-navy/75 text-base md:text-lg leading-relaxed font-medium">
+              As indústrias que crescem com consistência fizeram na ordem certa:{" "}
+              <strong className="text-navy font-bold">montaram o processo antes de contratar.</strong>{" "}
+              Definiram como um lead entra, é qualificado e vira proposta. Depois colocaram pessoas pra rodar.
             </p>
-          </AnimatedSection>
-
-          <AnimatedSection delay={0.2}>
-            <p>
-              As indústrias que saíram desse ciclo fizeram algo na ordem certa:
-              construíram o processo antes de contratar gente. Definiram como um
-              lead entra no radar, como é qualificado, quando recebe proposta,
-              como funciona o follow-up. Montaram o sistema primeiro. Aí sim
-              colocaram pessoas pra rodar.
-            </p>
-          </AnimatedSection>
-        </div>
+          </div>
+        </AnimatedSection>
       </div>
     </section>
   );

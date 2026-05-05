@@ -4,6 +4,7 @@ import { Provocacao } from "@/components/Provocacao";
 import { CustoReal } from "@/components/CustoReal";
 import { Reenquadramento } from "@/components/Reenquadramento";
 import { OQueMuda } from "@/components/OQueMuda";
+import { Metodo } from "@/components/Metodo";
 import { QuemSomos } from "@/components/QuemSomos";
 import { DiagnosticoCTA } from "@/components/DiagnosticoCTA";
 import { Formulario } from "@/components/Formulario";
@@ -19,6 +20,7 @@ export default function Home() {
         <CustoReal />
         <Reenquadramento />
         <OQueMuda />
+        <Metodo />
         <QuemSomos />
         <DiagnosticoCTA />
         <Formulario />

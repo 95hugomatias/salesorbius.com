@@ -20,17 +20,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.titleTag,
     description: post.metaDescription,
+    alternates: {
+      canonical: `https://www.salesorbius.com/blog/${post.slug}`,
+    },
     openGraph: {
       title: post.titleTag,
       description: post.metaDescription,
-      url: `https://salesorbius.com/blog/${post.slug}`,
-      siteName: "Orbius",
+      url: `https://www.salesorbius.com/blog/${post.slug}`,
+      siteName: "Salesorbius",
       locale: "pt_BR",
       type: "article",
       publishedTime: post.date || undefined,
+      modifiedTime: post.date || undefined,
     },
-    alternates: {
-      canonical: `https://salesorbius.com/blog/${post.slug}`,
+    twitter: {
+      card: "summary_large_image",
+      title: post.titleTag,
+      description: post.metaDescription,
     },
   };
 }
@@ -43,27 +49,40 @@ export default async function BlogPost({ params }: Props) {
 
   const relatedPosts = getRelatedPosts(post);
 
-  // JSON-LD Article schema
+  // JSON-LD BlogPosting schema
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     headline: post.h1,
     description: post.metaDescription,
     datePublished: post.date,
     dateModified: post.date,
+    inLanguage: "pt-BR",
     author: {
       "@type": "Organization",
-      name: "Orbius",
-      url: "https://salesorbius.com",
+      "@id": "https://www.salesorbius.com/#organization",
+      name: "Salesorbius",
+      url: "https://www.salesorbius.com",
     },
     publisher: {
       "@type": "Organization",
-      name: "Orbius",
-      url: "https://salesorbius.com",
+      "@id": "https://www.salesorbius.com/#organization",
+      name: "Salesorbius",
+      url: "https://www.salesorbius.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.salesorbius.com/favicon.svg",
+      },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://salesorbius.com/blog/${post.slug}`,
+      "@id": `https://www.salesorbius.com/blog/${post.slug}`,
+    },
+    isPartOf: {
+      "@type": "Blog",
+      "@id": "https://www.salesorbius.com/blog",
+      name: "Blog Salesorbius",
+      publisher: { "@id": "https://www.salesorbius.com/#organization" },
     },
   };
 

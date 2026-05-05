@@ -5,20 +5,26 @@ import { getPublishedPosts, categories } from "@/data/blog-posts";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog | Orbius — Vendas B2B para Indústrias",
+  title: "Blog | Salesorbius — Vendas B2B para Indústrias",
   description:
     "Conteúdo prático sobre prospecção, funil de vendas, CRM e gestão comercial para indústrias B2B.",
+  alternates: {
+    canonical: "https://www.salesorbius.com/blog",
+  },
   openGraph: {
-    title: "Blog | Orbius — Vendas B2B para Indústrias",
+    title: "Blog | Salesorbius — Vendas B2B para Indústrias",
     description:
       "Conteúdo prático sobre prospecção, funil de vendas, CRM e gestão comercial para indústrias B2B.",
-    url: "https://salesorbius.com/blog",
-    siteName: "Orbius",
+    url: "https://www.salesorbius.com/blog",
+    siteName: "Salesorbius",
     locale: "pt_BR",
     type: "website",
   },
-  alternates: {
-    canonical: "https://salesorbius.com/blog",
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog | Salesorbius — Vendas B2B para Indústrias",
+    description:
+      "Conteúdo prático sobre prospecção, funil de vendas, CRM e gestão comercial para indústrias B2B.",
   },
 };
 

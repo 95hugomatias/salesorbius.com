@@ -1,28 +1,30 @@
 import type { MetadataRoute } from "next";
 import { getPublishedPosts } from "@/data/blog-posts";
 
+const BASE = "https://www.salesorbius.com";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getPublishedPosts();
 
   const blogEntries: MetadataRoute.Sitemap = posts.map((post) => ({
-    url: `https://salesorbius.com/blog/${post.slug}`,
-    lastModified: new Date(post.date),
+    url: `${BASE}/blog/${post.slug}`,
+    lastModified: post.date ? new Date(post.date) : new Date(),
     changeFrequency: "monthly",
-    priority: post.isPillar ? 0.9 : 0.7,
+    priority: post.isPillar ? 0.8 : 0.7,
   }));
 
   return [
     {
-      url: "https://salesorbius.com",
+      url: BASE,
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 1,
+      priority: 1.0,
     },
     {
-      url: "https://salesorbius.com/blog",
+      url: `${BASE}/blog`,
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.8,
+      priority: 0.9,
     },
     ...blogEntries,
   ];

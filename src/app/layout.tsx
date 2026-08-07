@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
-
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
-
 export const metadata: Metadata = {
   title: "Salesorbius | Processo Comercial para Indústrias B2B",
   description:
@@ -43,7 +42,6 @@ export const metadata: Metadata = {
       "Ajudamos indústrias a vender todo mês com previsibilidade, sem depender de indicação ou vendedor-estrela.",
   },
 };
-
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -84,7 +82,6 @@ const organizationJsonLd = {
     },
   ],
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -98,6 +95,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(organizationJsonLd),
           }}
+        />
+        <Script
+          src="https://t.contentsquare.net/uxa/96bc475b676d3.js"
+          strategy="afterInteractive"
         />
         {children}
       </body>

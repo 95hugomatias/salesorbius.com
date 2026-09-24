@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { getVariante, normalizar, validar } from "@/lib/diagnostico";
+import { randomUUID } from "node:crypto";
 
 export const runtime = "nodejs";
 
@@ -24,12 +25,15 @@ export async function POST(request: Request) {
     }
   }
   const now = new Date();
+  const solicitacaoId = randomUUID();
   const webhook = process.env.MAKE_DIAGNOSTICO_WEBHOOK_URL || "https://hook.us1.make.com/4lhdoebay1rnifpiifzh9524oosdxrx2";
   try {
     const result = await fetch(webhook, {
       method: "POST", headers: { "Content-Type": "application/json" },
       signal: AbortSignal.timeout(15000),
       body: JSON.stringify({
+        solicitacao_id: solicitacaoId,
+interesse_confirmado: "pendente",
         nome: data.nome, telefone: data.telefone.replace(/\D/g, ""), email: data.email,
         empresa: data.empresa, setor: data.setor, desafio: data.desafio,
         papel_comercial: data.papelComercial, pessoas_vendas: data.equipeComercial,
@@ -44,7 +48,11 @@ export async function POST(request: Request) {
       console.error("Falha no webhook do diagnóstico:", result.status);
       return NextResponse.json({ error: "Não foi possível confirmar o envio." }, { status: 502 });
     }
-    return NextResponse.json({ success: true });
+    return NextResponse.json({
+  success: true,
+  solicitacao_id: solicitacaoId,
+  cluster: getVariante(body.cluster).slug,
+});
   } catch {
     console.error("Falha de conexão com o webhook do diagnóstico.");
     return NextResponse.json({ error: "Não foi possível confirmar o envio." }, { status: 502 });

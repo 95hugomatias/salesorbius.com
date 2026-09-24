@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 import { AnimatedSection } from "./AnimatedSection";
 
 const desafioOptions = [
@@ -120,6 +120,57 @@ export function Formulario() {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [phone, setPhone] = useState("");
   const [lgpd, setLgpd] = useState(false);
+    const formRef = useRef<HTMLFormElement>(null);
+  const viewedRef = useRef(false);
+  const startedRef = useRef(false);
+  const convertedRef = useRef(false);
+  const completedFieldsRef = useRef(new Set<string>());
+
+  function track(
+    event: string,
+    parameters: Record<string, string | number> = {}
+  ) {
+    // Uma falha de medição nunca deve impedir o envio do formulário.
+    try {
+      const analyticsWindow = window as Window & {
+        dataLayer?: Record<string, unknown>[];
+      };
+
+      analyticsWindow.dataLayer = analyticsWindow.dataLayer || [];
+      analyticsWindow.dataLayer.push({
+        event,
+        form_id: "diagnostico",
+        ...parameters,
+      });
+    } catch {
+      // O formulário continua funcionando mesmo sem analytics.
+    }
+  }
+
+  function trackStart() {
+    if (startedRef.current) return;
+    startedRef.current = true;
+    track("form_start");
+  }
+
+  useEffect(() => {
+    const form = formRef.current;
+    if (!form || !("IntersectionObserver" in window)) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting || viewedRef.current) return;
+
+        viewedRef.current = true;
+        track("form_view");
+        observer.disconnect();
+      },
+      { threshold: 0 }
+    );
+
+    observer.observe(form);
+    return () => observer.disconnect();
+  }, []);
 
   function validateAll(form: HTMLFormElement): Record<string, string> {
     const errs: Record<string, string> = {};
@@ -140,18 +191,32 @@ export function Formulario() {
     return errs;
   }
 
-  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+
+    if (status === "sending" || convertedRef.current) return;
+
+    trackStart();
+
     const form = e.currentTarget;
     const validationErrors = validateAll(form);
 
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
+
+      Object.keys(validationErrors).forEach((field) => {
+        track("form_error", {
+          field_name: field,
+          error_type: "validation",
+        });
+      });
+
       return;
     }
 
     setErrors({});
     setStatus("sending");
+    track("form_submit_attempt");
 
     const data = {
       nome: (form.elements.namedItem("nome") as HTMLInputElement).value,
@@ -175,14 +240,26 @@ export function Formulario() {
       });
 
       if (res.ok) {
+        if (!convertedRef.current) {
+          convertedRef.current = true;
+          track("generate_lead");
+        }
+
         setStatus("sent");
         form.reset();
         setPhone("");
         setLgpd(false);
       } else {
+        track("form_error", {
+          error_type: "server",
+          http_status: res.status,
+        });
         setStatus("error");
       }
     } catch {
+      track("form_error", {
+        error_type: "network",
+      });
       setStatus("error");
     }
   }
@@ -210,7 +287,64 @@ export function Formulario() {
           </AnimatedSection>
         ) : (
           <AnimatedSection>
-            <form onSubmit={handleSubmit} className="space-y-4 text-left">
+            <form
+  ref={formRef}
+  id="diagnostico"
+  onSubmit={handleSubmit}
+  onFocusCapture={(e) => {
+    if (
+      e.target instanceof HTMLInputElement ||
+      e.target instanceof HTMLSelectElement
+    ) {
+      trackStart();
+    }
+  }}
+  onChangeCapture={() => trackStart()}
+  onBlurCapture={(e) => {
+    const field = e.target;
+
+    if (
+      !(field instanceof HTMLInputElement) &&
+      !(field instanceof HTMLSelectElement)
+    ) return;
+
+    if (!field.name || completedFieldsRef.current.has(field.name)) return;
+
+    const filled =
+      field instanceof HTMLInputElement && field.type === "checkbox"
+        ? field.checked
+        : field.value.trim() !== "";
+
+    if (!filled || !field.validity.valid) return;
+
+    if (field.name === "email" && validateEmail(field.value)) return;
+    if (field.name === "telefone" && validatePhone(field.value)) return;
+    if (field.name === "site" && validateSite(field.value)) return;
+
+    completedFieldsRef.current.add(field.name);
+
+    track("form_progress", {
+      field_name: field.name,
+      completed_fields: completedFieldsRef.current.size,
+    });
+  }}
+  onInvalidCapture={(e) => {
+    const field = e.target;
+
+    if (
+      field instanceof HTMLInputElement ||
+      field instanceof HTMLSelectElement
+    ) {
+      track("form_error", {
+        field_name: field.name || "unknown",
+        error_type: field.validity.valueMissing
+          ? "required"
+          : "invalid_format",
+      });
+    }
+  }}
+  className="space-y-4 text-left"
+>
               <div>
                 <input
                   type="text"
@@ -352,6 +486,7 @@ export function Formulario() {
               <div className="pt-2">
                 <label className="flex items-start gap-3 cursor-pointer">
                   <input
+                    type="checkbox"
                     type="checkbox"
                     checked={lgpd}
                     onChange={(e) => {

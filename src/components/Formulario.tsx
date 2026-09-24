@@ -487,7 +487,7 @@ export function Formulario() {
                 <label className="flex items-start gap-3 cursor-pointer">
                   <input
                     type="checkbox"
-                    type="checkbox"
+                    name="lgpd"
                     checked={lgpd}
                     onChange={(e) => {
                       setLgpd(e.target.checked);

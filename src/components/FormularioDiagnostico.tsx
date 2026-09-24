@@ -123,6 +123,23 @@ export function FormularioDiagnostico({ variante }: { variante: Variante }) {
         track("form_error", variante.slug, { error_type: "api", http_status: response.status });
         return;
       }
+      // Guarda os dados necessários para confirmar o interesse na página de obrigado.
+try {
+  sessionStorage.removeItem("salesorbius_solicitacao");
+
+  if (typeof result.solicitacao_id === "string" && result.solicitacao_id) {
+    sessionStorage.setItem(
+      "salesorbius_solicitacao",
+      JSON.stringify({
+        solicitacao_id: result.solicitacao_id,
+        lp_cluster: variante.slug,
+      })
+    );
+  }
+} catch {
+  // Uma restrição do navegador não deve impedir a conclusão do cadastro.
+  console.warn("Não foi possível guardar os dados para a confirmação.");
+}
       converted.current = true;
       setSent(true);
       // Aguarda as tags quando possível; o redirecionamento também funciona sem GTM.

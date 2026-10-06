@@ -2,6 +2,7 @@ function OrbitalMark({ size = 26 }: { size?: number }) {
   const r = size / 2;
   const rx = r * 0.85;
   const ry = r * 0.38;
+
   return (
     <svg
       width={size}
@@ -16,12 +17,14 @@ function OrbitalMark({ size = 26 }: { size?: number }) {
         stroke="rgba(255,255,255,0.22)"
         strokeWidth="1.2"
       />
+
       <path
         d={`M ${-rx} 0 A ${rx} ${ry} 0 0 1 ${rx} 0`}
         fill="none"
         stroke="rgba(255,255,255,0.55)"
         strokeWidth="1.2"
       />
+
       <path
         d={`M ${-rx} 0 A ${rx} ${ry} 0 0 0 ${rx} 0`}
         fill="none"
@@ -29,6 +32,7 @@ function OrbitalMark({ size = 26 }: { size?: number }) {
         strokeWidth="1.2"
         transform="rotate(68)"
       />
+
       <path
         d={`M ${-rx} 0 A ${rx} ${ry} 0 0 1 ${rx} 0`}
         fill="none"
@@ -36,8 +40,20 @@ function OrbitalMark({ size = 26 }: { size?: number }) {
         strokeWidth="1.6"
         transform="rotate(68)"
       />
-      <circle cx={rx} cy={0} r={r * 0.1} fill="rgba(255,255,255,0.35)" />
-      <circle cx={0} cy={0} r={r * 0.19} fill="#E05718" />
+
+      <circle
+        cx={rx}
+        cy={0}
+        r={r * 0.1}
+        fill="rgba(255,255,255,0.35)"
+      />
+
+      <circle
+        cx={0}
+        cy={0}
+        r={r * 0.19}
+        fill="#E05718"
+      />
     </svg>
   );
 }
@@ -46,8 +62,12 @@ export function Footer() {
   return (
     <footer className="bg-navy py-20">
       <div className="mx-auto max-w-6xl px-6 text-center">
-        <a href="#" className="inline-flex items-center gap-2.5 mb-4">
+        <a
+          href="#"
+          className="inline-flex items-center gap-2.5 mb-4"
+        >
           <OrbitalMark size={26} />
+
           <span className="text-white text-sm font-bold tracking-[0.25em] uppercase">
             Salesorbius
           </span>
@@ -64,6 +84,7 @@ export function Footer() {
           >
             contato@salesorbius.com
           </a>
+
           <a
             href="https://instagram.com/orbius.co"
             target="_blank"
@@ -76,17 +97,15 @@ export function Footer() {
 
         <div className="h-px bg-white/10 mb-10" />
 
-        <p className="text-white/25 text-xs font-medium">
-          &copy; 2026 Salesorbius. Todos os direitos reservados.
         <div className="space-y-2 text-white/25 text-xs font-medium">
-  <p>
-    &copy; 2026 Salesorbius. Todos os direitos reservados.
-  </p>
+          <p>
+            &copy; 2026 Salesorbius. Todos os direitos reservados.
+          </p>
 
-  <p>
-    Razão social: 60 173 095 HUGO FERNANDO MATIAS ANTONIO
-  </p>
-</div>
+          <p>
+            Razão social: 60 173 095 HUGO FERNANDO MATIAS ANTONIO
+          </p>
+        </div>
       </div>
     </footer>
   );

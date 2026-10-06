@@ -78,7 +78,15 @@ export function Footer() {
 
         <p className="text-white/25 text-xs font-medium">
           &copy; 2026 Salesorbius. Todos os direitos reservados.
-        </p>
+        <div className="space-y-2 text-white/25 text-xs font-medium">
+  <p>
+    &copy; 2026 Salesorbius. Todos os direitos reservados.
+  </p>
+
+  <p>
+    Razão social: 60 173 095 HUGO FERNANDO MATIAS ANTONIO
+  </p>
+</div>
       </div>
     </footer>
   );

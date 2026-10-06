@@ -90,6 +90,10 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={spaceGrotesk.variable}>
       <head>
+        <meta
+  name="facebook-domain-verification"
+  content="wc2o0as7ewa1eksihki0dbm6ih37ek"
+/>
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){
